@@ -17,11 +17,14 @@ class AlbumTableViewController: UITableViewController {
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "AlbumTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
+        tableView.separatorInset = UIEdgeInsets.zero
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! AlbumTableViewCell
