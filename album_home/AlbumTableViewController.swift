@@ -31,6 +31,7 @@ class AlbumTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! AlbumTableViewCell
+        //cell.makeBorder()
         return cell
     }
     
