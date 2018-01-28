@@ -26,6 +26,13 @@
 		1E40AB762013A67D001CC2C5 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */; };
 		1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */; };
 		1E40AB792013AC68001CC2C5 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB782013AC68001CC2C5 /* AlbumTableViewController.swift */; };
+		1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */; };
+		1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */; };
+		1E842B4F201D66ED009E26DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E842B4E201D66ED009E26DB /* BaseViewController.swift */; };
+		1E842B53201D67B9009E26DB /* logo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B50201D67B8009E26DB /* logo (1).png */; };
+		1E842B54201D67B9009E26DB /* notice.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B51201D67B8009E26DB /* notice.png */; };
+		1E842B55201D67B9009E26DB /* logo (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B52201D67B9009E26DB /* logo (2).png */; };
+		1E842B58201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B57201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg */; };
 		1EDA1C50201C548100739707 /* AlbumHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA1C4F201C548100739707 /* AlbumHome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +79,13 @@
 		1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		1E40AB782013AC68001CC2C5 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
+		1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotosViewController.swift; sourceTree = "<group>"; };
+		1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoosePhotos.storyboard; sourceTree = "<group>"; };
+		1E842B4E201D66ED009E26DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1E842B50201D67B8009E26DB /* logo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo (1).png"; sourceTree = "<group>"; };
+		1E842B51201D67B8009E26DB /* notice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notice.png; sourceTree = "<group>"; };
+		1E842B52201D67B9009E26DB /* logo (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo (2).png"; sourceTree = "<group>"; };
+		1E842B57201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Malaysia_Skyscrapers_447585.jpg; sourceTree = "<group>"; };
 		1EDA1C4F201C548100739707 /* AlbumHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumHome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,11 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				1E40AB2520124ACE001CC2C5 /* Gajumal */,
+				1E842B56201D67C6009E26DB /* resources */,
 				1E40AB5520124BE3001CC2C5 /* common */,
 				1E40AB5420124AEC001CC2C5 /* splash */,
 				1E40AB6520138A96001CC2C5 /* explain */,
 				1E40AB5A20124C91001CC2C5 /* global_menu */,
 				1E40AB5B20124E87001CC2C5 /* album_home */,
+				1E842B49201D663E009E26DB /* choose_photos */,
 				1E40AB6420138A6E001CC2C5 /* take_photos */,
 				1E40AB6620138B08001CC2C5 /* admin_account */,
 				1E40AB3A20124ACF001CC2C5 /* GajumalTests */,
@@ -168,6 +184,7 @@
 		1E40AB5520124BE3001CC2C5 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				1E842B4E201D66ED009E26DB /* BaseViewController.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -218,6 +235,26 @@
 				1E40AB7120138C0C001CC2C5 /* AdminAccount.storyboard */,
 			);
 			path = admin_account;
+			sourceTree = "<group>";
+		};
+		1E842B49201D663E009E26DB /* choose_photos */ = {
+			isa = PBXGroup;
+			children = (
+				1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */,
+				1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */,
+			);
+			path = choose_photos;
+			sourceTree = "<group>";
+		};
+		1E842B56201D67C6009E26DB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E842B57201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg */,
+				1E842B51201D67B8009E26DB /* notice.png */,
+				1E842B50201D67B8009E26DB /* logo (1).png */,
+				1E842B52201D67B9009E26DB /* logo (2).png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,11 +367,16 @@
 				1E40AB6A20138B9E001CC2C5 /* Explain.storyboard in Resources */,
 				1E40AB6320124F2F001CC2C5 /* MainTabbar.storyboard in Resources */,
 				1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */,
+				1E842B54201D67B9009E26DB /* notice.png in Resources */,
+				1E842B53201D67B9009E26DB /* logo (1).png in Resources */,
 				1E40AB7220138C0C001CC2C5 /* AdminAccount.storyboard in Resources */,
+				1E842B58201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg in Resources */,
 				1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */,
 				1E40AB6E20138BE2001CC2C5 /* TakePhotos.storyboard in Resources */,
 				1EDA1C50201C548100739707 /* AlbumHome.storyboard in Resources */,
 				1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */,
+				1E842B55201D67B9009E26DB /* logo (2).png in Resources */,
+				1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */,
 				1E40AB5920124C67001CC2C5 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +404,8 @@
 			files = (
 				1E40AB6C20138BD1001CC2C5 /* TakePhotosViewController.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
+				1E842B4F201D66ED009E26DB /* BaseViewController.swift in Sources */,
+				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,
 				1E40AB6120124F0F001CC2C5 /* MainTabbarController.swift in Sources */,
 				1E40AB6820138B90001CC2C5 /* ExplainViewController.swift in Sources */,

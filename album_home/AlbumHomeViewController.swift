@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlbumHomeViewController: UIViewController {
+class AlbumHomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

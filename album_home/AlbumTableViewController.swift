@@ -18,13 +18,16 @@ class AlbumTableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "AlbumTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         tableView.separatorInset = UIEdgeInsets.zero
+        tableView.separatorStyle = .none
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return .leastNormalMagnitude
+//    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! AlbumTableViewCell
