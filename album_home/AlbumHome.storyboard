@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,22 +22,49 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xm-m0-Pyr">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <connections>
-                                    <segue destination="xv6-9F-ZmN" kind="embed" id="seW-JZ-j73"/>
+                                    <segue destination="xv6-9F-ZmN" kind="embed" identifier="AlbumTableViewControllerSegue" id="seW-JZ-j73"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kf-YV-6eW">
+                                <rect key="frame" x="245" y="444" width="75" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FmW-iZ-jj5">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <state key="normal" title="Button" image="camera.png"/>
+                                        <connections>
+                                            <action selector="showPhotos:" destination="dzo-wC-7hs" eventType="touchUpInside" id="FpH-mt-V79"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FmW-iZ-jj5" secondAttribute="bottom" id="5Lz-SS-BJD"/>
+                                    <constraint firstAttribute="width" constant="75" id="9lf-NF-4if"/>
+                                    <constraint firstAttribute="width" secondItem="6kf-YV-6eW" secondAttribute="height" multiplier="1:1" id="AFc-Du-ohH"/>
+                                    <constraint firstItem="FmW-iZ-jj5" firstAttribute="top" secondItem="6kf-YV-6eW" secondAttribute="top" id="Lx1-fR-HvN"/>
+                                    <constraint firstItem="FmW-iZ-jj5" firstAttribute="leading" secondItem="6kf-YV-6eW" secondAttribute="leading" id="e9A-Rb-ngt"/>
+                                    <constraint firstAttribute="trailing" secondItem="FmW-iZ-jj5" secondAttribute="trailing" id="scy-gU-SX3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1xm-m0-Pyr" firstAttribute="bottom" secondItem="Juz-pp-esA" secondAttribute="bottom" id="68I-Q5-JZx"/>
+                            <constraint firstItem="6kf-YV-6eW" firstAttribute="trailing" secondItem="Juz-pp-esA" secondAttribute="trailing" id="Fmm-9Y-Vet"/>
                             <constraint firstItem="1xm-m0-Pyr" firstAttribute="trailing" secondItem="Juz-pp-esA" secondAttribute="trailing" id="HVB-nO-ZOQ"/>
                             <constraint firstItem="1xm-m0-Pyr" firstAttribute="leading" secondItem="Juz-pp-esA" secondAttribute="leading" id="c8h-dg-2Sm"/>
                             <constraint firstItem="1xm-m0-Pyr" firstAttribute="top" secondItem="Juz-pp-esA" secondAttribute="top" id="dI4-bJ-tNm"/>
+                            <constraint firstItem="6kf-YV-6eW" firstAttribute="bottom" secondItem="Juz-pp-esA" secondAttribute="bottom" id="uye-3a-HlY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Juz-pp-esA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eLo-yu-j8W"/>
                     <navigationItem key="navigationItem" id="iCu-MQ-QxH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="photoView" destination="6kf-YV-6eW" id="IQE-Mw-2gk"/>
+                        <outlet property="seePhotos" destination="FmW-iZ-jj5" id="ti1-Rc-z2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsL-mJ-fsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,4 +115,7 @@
             <point key="canvasLocation" x="-1596" y="1298"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.png" width="250" height="301"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class ChoosePhotosViewController: BaseViewController {
     
@@ -17,4 +18,5 @@ class ChoosePhotosViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 }
