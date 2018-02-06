@@ -30,7 +30,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FmW-iZ-jj5">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <state key="normal" title="Button" image="camera.png"/>
+                                        <state key="normal" title="Button" image="logo (1).png"/>
                                         <connections>
                                             <action selector="showPhotos:" destination="dzo-wC-7hs" eventType="touchUpInside" id="FpH-mt-V79"/>
                                         </connections>
@@ -116,6 +116,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.png" width="250" height="301"/>
+        <image name="logo (1).png" width="250" height="250"/>
     </resources>
 </document>
