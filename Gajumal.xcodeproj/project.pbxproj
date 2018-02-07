@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E290C83202B3A2000B6FCC4 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C82202B3A2000B6FCC4 /* GridViewCell.swift */; };
+		1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */; };
+		1E290C87202B51EF00B6FCC4 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */; };
+		1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C88202B578400B6FCC4 /* AnimatedImage.swift */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -26,8 +30,6 @@
 		1E40AB762013A67D001CC2C5 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */; };
 		1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */; };
 		1E40AB792013AC68001CC2C5 /* AlbumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB782013AC68001CC2C5 /* AlbumTableViewController.swift */; };
-		1E466390202A10B50082C798 /* SeePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E46638F202A10B50082C798 /* SeePhotosViewController.swift */; };
-		1E466392202A11DA0082C798 /* CameraRollCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E466391202A11DA0082C798 /* CameraRollCollectionViewCell.swift */; };
 		1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */; };
 		1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */; };
 		1E842B4F201D66ED009E26DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E842B4E201D66ED009E26DB /* BaseViewController.swift */; };
@@ -56,6 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E290C82202B3A2000B6FCC4 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosViewController.swift; sourceTree = "<group>"; };
+		1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		1E290C88202B578400B6FCC4 /* AnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +87,6 @@
 		1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		1E40AB782013AC68001CC2C5 /* AlbumTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewController.swift; sourceTree = "<group>"; };
-		1E46638F202A10B50082C798 /* SeePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeePhotosViewController.swift; sourceTree = "<group>"; };
-		1E466391202A11DA0082C798 /* CameraRollCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotosViewController.swift; sourceTree = "<group>"; };
 		1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoosePhotos.storyboard; sourceTree = "<group>"; };
 		1E842B4E201D66ED009E26DB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -246,8 +250,10 @@
 			children = (
 				1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */,
 				1E842B4C201D668B009E26DB /* ChoosePhotos.storyboard */,
-				1E46638F202A10B50082C798 /* SeePhotosViewController.swift */,
-				1E466391202A11DA0082C798 /* CameraRollCollectionViewCell.swift */,
+				1E290C82202B3A2000B6FCC4 /* GridViewCell.swift */,
+				1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */,
+				1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */,
+				1E290C88202B578400B6FCC4 /* AnimatedImage.swift */,
 			);
 			path = choose_photos;
 			sourceTree = "<group>";
@@ -410,17 +416,19 @@
 			files = (
 				1E40AB6C20138BD1001CC2C5 /* TakePhotosViewController.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
+				1E290C83202B3A2000B6FCC4 /* GridViewCell.swift in Sources */,
 				1E842B4F201D66ED009E26DB /* BaseViewController.swift in Sources */,
 				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
-				1E466392202A11DA0082C798 /* CameraRollCollectionViewCell.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,
-				1E466390202A10B50082C798 /* SeePhotosViewController.swift in Sources */,
 				1E40AB6120124F0F001CC2C5 /* MainTabbarController.swift in Sources */,
 				1E40AB6820138B90001CC2C5 /* ExplainViewController.swift in Sources */,
+				1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */,
 				1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */,
 				1E40AB7020138BFB001CC2C5 /* AdminAccountViewController.swift in Sources */,
+				1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */,
 				1E40AB792013AC68001CC2C5 /* AlbumTableViewController.swift in Sources */,
 				1E40AB762013A67D001CC2C5 /* AlbumTableViewCell.swift in Sources */,
+				1E290C87202B51EF00B6FCC4 /* AnimatedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

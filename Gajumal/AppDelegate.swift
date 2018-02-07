@@ -15,9 +15,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if let splitViewController = self.window?.rootViewController as? UISplitViewController {
+            #if os(iOS)
+                if let navigationController = splitViewController.viewControllers.last as? UINavigationController {
+                    navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+                }
+            #endif
+            splitViewController.delegate = self as! UISplitViewControllerDelegate
+        }
         return true
     }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? ChoosePhotosViewController else { return false }
+        if topAsDetailController.fetchResult == nil {
+            // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+            return true
+        }
+        return false
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
+        // Let the storyboard handle the segue for every case except going from detail:assetgrid to detail:asset.
+        guard !splitViewController.isCollapsed else { return false }
+        guard !(vc is UINavigationController) else { return false }
+        guard let detailNavController =
+            splitViewController.viewControllers.last! as? UINavigationController,
+            detailNavController.viewControllers.count == 1
+            else { return false }
+        
+        detailNavController.pushViewController(vc, animated: true)
+        return true
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
