@@ -8,16 +8,7 @@
 
 import UIKit
 
-protocol AlbumTableViewControllerDelegate : class {
-    func viewDidscrolledUp()
-    func viewDidscrolledDown()
-}
-
 class AlbumTableViewController: UITableViewController {
-    
-    weak var delegate : AlbumTableViewControllerDelegate?
-    // スクロールの開始点
-    var scrollBeginingPoint: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,22 +23,6 @@ class AlbumTableViewController: UITableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        scrollBeginingPoint = scrollView.contentOffset
-    }
-    
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let currentPoint = scrollView.contentOffset
-        
-        if scrollBeginingPoint.y < currentPoint.y {
-            print("scroll to bottom")
-            delegate?.viewDidscrolledDown()
-        } else {
-            print("scroll to top")
-            delegate?.viewDidscrolledUp()
-        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

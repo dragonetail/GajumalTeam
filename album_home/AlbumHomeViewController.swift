@@ -8,18 +8,12 @@
 
 import UIKit
 
-class AlbumHomeViewController: BaseViewController {
+class AlbumHomeViewController: UIViewController {
     
     @IBOutlet weak var photoView: UIView!
     @IBOutlet weak var seePhotos: UIButton!
     private var isButtonDisplayed = true
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AlbumTableViewControllerSegue" {
-            let vc = segue.destination as! AlbumTableViewController
-            vc.delegate = self
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,24 +32,6 @@ class AlbumHomeViewController: BaseViewController {
         let storyboard = UIStoryboard(name: "ChoosePhotos", bundle: nil)
         let nextVC = storyboard.instantiateViewController(withIdentifier: "ChoosePhotosViewController")
         self.navigationController?.pushViewController(nextVC, animated: true)
-    }
-    
-}
-
-extension AlbumHomeViewController: AlbumTableViewControllerDelegate {
-    
-    func viewDidscrolledUp() {
-        if !isButtonDisplayed {
-            seePhotos.isHidden = false
-            isButtonDisplayed = true
-        }
-    }
-    
-    func viewDidscrolledDown() {
-        if isButtonDisplayed {
-            seePhotos.isHidden = true
-            isButtonDisplayed = false
-        }
     }
     
 }
