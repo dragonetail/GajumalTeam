@@ -13,7 +13,6 @@ class AlbumTableViewCell: UITableViewCell {
     
     @IBOutlet weak var topView: UIView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         topView.layer.borderColor = UIColor.lightGray.cgColor

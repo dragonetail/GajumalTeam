@@ -12,17 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navigationController : UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if let splitViewController = self.window?.rootViewController as? UISplitViewController {
-            #if os(iOS)
-                if let navigationController = splitViewController.viewControllers.last as? UINavigationController {
-                    navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-                }
-            #endif
-            splitViewController.delegate = self as! UISplitViewControllerDelegate
-        }
         return true
     }
     
@@ -35,20 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return false
     }
-    
-    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
-        // Let the storyboard handle the segue for every case except going from detail:assetgrid to detail:asset.
-        guard !splitViewController.isCollapsed else { return false }
-        guard !(vc is UINavigationController) else { return false }
-        guard let detailNavController =
-            splitViewController.viewControllers.last! as? UINavigationController,
-            detailNavController.viewControllers.count == 1
-            else { return false }
-        
-        detailNavController.pushViewController(vc, animated: true)
-        return true
-    }
-
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

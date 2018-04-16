@@ -10,12 +10,16 @@ import UIKit
 
 class AlbumHomeViewController: UIViewController {
     
-    @IBOutlet weak var photoView: UIView!
-    @IBOutlet weak var seePhotos: UIButton!
-    private var isButtonDisplayed = true
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var normalButton: NormalButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "AlbumTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
+        tableView.separatorInset = UIEdgeInsets.zero
+        tableView.separatorStyle = .none
         
     }
     override func didReceiveMemoryWarning() {
@@ -24,14 +28,22 @@ class AlbumHomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+}
+
+extension AlbumHomeViewController : UITableViewDelegate {
     
-    @IBAction func showPhotos(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "ChoosePhotos", bundle: nil)
-        let nextVC = storyboard.instantiateViewController(withIdentifier: "ChoosePhotosViewController")
-        self.navigationController?.pushViewController(nextVC, animated: true)
+}
+
+extension AlbumHomeViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell") as! AlbumTableViewCell
+        return cell
     }
     
 }
