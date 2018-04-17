@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicHeader" customModule="Gajumal">
+            <connections>
+                <outlet property="centerButton" destination="TJb-XZ-IKK" id="fAV-vx-hi4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Joh-0p-gaF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJb-XZ-IKK">
+                    <rect key="frame" x="172.5" y="42" width="30" height="33"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="centerButtonAction:" destination="-1" eventType="touchUpInside" id="e3Y-ZE-GZR"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbw_parts_down_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-d6-VAd">
+                    <rect key="frame" x="207.5" y="51" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="NJy-ML-zJn"/>
+                        <constraint firstAttribute="width" secondItem="bQu-d6-VAd" secondAttribute="height" multiplier="1:1" id="j2W-X2-FOe"/>
+                        <constraint firstAttribute="width" constant="15" id="sav-oa-yGf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TJb-XZ-IKK" secondAttribute="bottom" constant="10" id="h79-he-g4j"/>
+                <constraint firstItem="bQu-d6-VAd" firstAttribute="centerY" secondItem="TJb-XZ-IKK" secondAttribute="centerY" id="l3p-Ah-30A"/>
+                <constraint firstItem="TJb-XZ-IKK" firstAttribute="centerX" secondItem="Joh-0p-gaF" secondAttribute="centerX" id="n7V-lr-bMK"/>
+                <constraint firstItem="bQu-d6-VAd" firstAttribute="leading" secondItem="TJb-XZ-IKK" secondAttribute="trailing" constant="5" id="vTv-FB-ge8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hrf-1U-P98"/>
+            <point key="canvasLocation" x="138" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sbw_parts_down_arrow.png" width="16" height="16"/>
+    </resources>
+</document>

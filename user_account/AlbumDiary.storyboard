@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDP-Wc-edK">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="yEY-1x-eNy">
+            <objects>
+                <viewController id="aDP-Wc-edK" customClass="AlbumDiaryViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogz-rE-2Ic">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-4R-aTM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85.333333333333329"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbw_parts_tab_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="NM4-NB-OUl">
+                                        <rect key="frame" x="0.0" y="83.333333333333329" width="187.66666666666666" height="2"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbw_parts_tab_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="KNw-ct-STh">
+                                        <rect key="frame" x="187.66666666666663" y="83.333333333333329" width="187.33333333333337" height="2"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVn-ca-nJU">
+                                        <rect key="frame" x="60" y="50.333333333333343" width="68" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="アルバム">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-DP-DeC">
+                                        <rect key="frame" x="239" y="50.333333333333343" width="85" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="ダイアリー">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KNw-ct-STh" firstAttribute="width" secondItem="1Ld-4R-aTM" secondAttribute="width" multiplier="1:2" id="3Tm-ed-zIB"/>
+                                    <constraint firstItem="KNw-ct-STh" firstAttribute="top" secondItem="wel-DP-DeC" secondAttribute="bottom" id="Tbx-tc-cXH"/>
+                                    <constraint firstItem="NM4-NB-OUl" firstAttribute="centerX" secondItem="fVn-ca-nJU" secondAttribute="centerX" id="Tsz-eS-ayh"/>
+                                    <constraint firstAttribute="bottom" secondItem="KNw-ct-STh" secondAttribute="bottom" id="iaP-iQ-hmt"/>
+                                    <constraint firstAttribute="bottom" secondItem="NM4-NB-OUl" secondAttribute="bottom" id="n1H-fH-Xh9"/>
+                                    <constraint firstItem="wel-DP-DeC" firstAttribute="centerX" secondItem="KNw-ct-STh" secondAttribute="centerX" id="o3e-fG-qEm"/>
+                                    <constraint firstAttribute="trailing" secondItem="KNw-ct-STh" secondAttribute="trailing" id="ofi-Vm-1eI"/>
+                                    <constraint firstItem="NM4-NB-OUl" firstAttribute="leading" secondItem="1Ld-4R-aTM" secondAttribute="leading" id="tjy-mA-TPG"/>
+                                    <constraint firstItem="NM4-NB-OUl" firstAttribute="top" secondItem="fVn-ca-nJU" secondAttribute="bottom" id="vLL-Ou-Mzq"/>
+                                    <constraint firstItem="NM4-NB-OUl" firstAttribute="width" secondItem="1Ld-4R-aTM" secondAttribute="width" multiplier="1:2" id="ws0-hc-02n"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsh-4r-jZp">
+                                <rect key="frame" x="0.0" y="95.666666666666686" width="375" height="716.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-PJ-OxX">
+                                        <rect key="frame" x="67" y="298.66666666666669" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ld-4R-aTM" firstAttribute="trailing" secondItem="hpV-20-0vk" secondAttribute="trailing" id="6II-ug-oPF"/>
+                            <constraint firstItem="Qsh-4r-jZp" firstAttribute="top" secondItem="1Ld-4R-aTM" secondAttribute="bottom" id="AZr-4i-r2d"/>
+                            <constraint firstItem="Qsh-4r-jZp" firstAttribute="leading" secondItem="hpV-20-0vk" secondAttribute="leading" id="CtN-7R-nvQ"/>
+                            <constraint firstItem="1Ld-4R-aTM" firstAttribute="top" secondItem="ogz-rE-2Ic" secondAttribute="top" id="Pyg-To-1Yd"/>
+                            <constraint firstItem="Qsh-4r-jZp" firstAttribute="top" secondItem="ogz-rE-2Ic" secondAttribute="bottom" multiplier="2:17" id="Uu2-48-WMo"/>
+                            <constraint firstItem="Qsh-4r-jZp" firstAttribute="trailing" secondItem="hpV-20-0vk" secondAttribute="trailing" id="W0c-eU-3Db"/>
+                            <constraint firstItem="1Ld-4R-aTM" firstAttribute="leading" secondItem="hpV-20-0vk" secondAttribute="leading" id="emA-XT-Xsk"/>
+                            <constraint firstItem="1Ld-4R-aTM" firstAttribute="height" secondItem="ogz-rE-2Ic" secondAttribute="height" multiplier="2:19" id="ljE-FE-RGR"/>
+                            <constraint firstAttribute="bottom" secondItem="Qsh-4r-jZp" secondAttribute="bottom" id="y3r-t3-frP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hpV-20-0vk"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AZr-4i-r2d"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="7cV-H4-eqc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-2J-31D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122.40000000000001" y="-36.945812807881772"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sbw_parts_tab_selected.png" width="104" height="2"/>
+    </resources>
+</document>

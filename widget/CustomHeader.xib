@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NormalButton" customModule="Gajumal" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NormalButton" customModule="Gajumal">
             <connections>
                 <outlet property="centerButton" destination="9ZX-xg-Bl2" id="oWP-rY-r8d"/>
                 <outlet property="rightButton" destination="209-0Z-oSb" id="IEi-Kx-7qA"/>
@@ -47,10 +47,10 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sbw_parts_down_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="aTO-NV-q2A">
-                    <rect key="frame" x="207.5" y="49" width="20" height="20"/>
+                    <rect key="frame" x="207.5" y="51.5" width="15" height="15"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="Q3D-TR-ygh"/>
-                        <constraint firstAttribute="width" constant="20" id="SvI-nC-nXW"/>
+                        <constraint firstAttribute="height" constant="15" id="Q3D-TR-ygh"/>
+                        <constraint firstAttribute="width" constant="15" id="SvI-nC-nXW"/>
                         <constraint firstAttribute="width" secondItem="aTO-NV-q2A" secondAttribute="height" multiplier="1:1" id="rHD-kX-b0B"/>
                     </constraints>
                 </imageView>

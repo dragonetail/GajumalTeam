@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdminAccountViewController: UIViewController {
+class AlbumDiaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

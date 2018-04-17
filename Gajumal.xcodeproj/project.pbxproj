@@ -10,9 +10,14 @@
 		1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */; };
 		1E290C87202B51EF00B6FCC4 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */; };
 		1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E290C88202B578400B6FCC4 /* AnimatedImage.swift */; };
-		1E3E56DC2084E6B500BEBCF7 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56DB2084E6B500BEBCF7 /* NormalButton.swift */; };
-		1E3E56DE2084E6C700BEBCF7 /* NormalButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56DD2084E6C700BEBCF7 /* NormalButton.xib */; };
+		1E3E56DC2084E6B500BEBCF7 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56DB2084E6B500BEBCF7 /* CustomHeader.swift */; };
+		1E3E56DE2084E6C700BEBCF7 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56DD2084E6C700BEBCF7 /* CustomHeader.xib */; };
 		1E3E56E02084E89D00BEBCF7 /* OnClickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56DF2084E89D00BEBCF7 /* OnClickDelegate.swift */; };
+		1E3E56E420862EAE00BEBCF7 /* BasicHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56E320862EAD00BEBCF7 /* BasicHeader.swift */; };
+		1E3E56E620862EBB00BEBCF7 /* BasicHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E520862EBB00BEBCF7 /* BasicHeader.xib */; };
+		1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */; };
+		1E3E56EB2086442900BEBCF7 /* sbw_parts_tab_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */; };
+		1E3E56EC2086442900BEBCF7 /* sbw_parts_tab_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -21,12 +26,10 @@
 		1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB5620124C1F001CC2C5 /* SplashViewContrlller.swift */; };
 		1E40AB5920124C67001CC2C5 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB5820124C67001CC2C5 /* Splash.storyboard */; };
 		1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */; };
-		1E40AB6820138B90001CC2C5 /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB6720138B90001CC2C5 /* ExplainViewController.swift */; };
-		1E40AB6A20138B9E001CC2C5 /* Explain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB6920138B9E001CC2C5 /* Explain.storyboard */; };
 		1E40AB6C20138BD1001CC2C5 /* TakePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB6B20138BD1001CC2C5 /* TakePhotosViewController.swift */; };
 		1E40AB6E20138BE2001CC2C5 /* TakePhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB6D20138BE2001CC2C5 /* TakePhotos.storyboard */; };
-		1E40AB7020138BFB001CC2C5 /* AdminAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB6F20138BFB001CC2C5 /* AdminAccountViewController.swift */; };
-		1E40AB7220138C0C001CC2C5 /* AdminAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB7120138C0C001CC2C5 /* AdminAccount.storyboard */; };
+		1E40AB7020138BFB001CC2C5 /* AlbumDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB6F20138BFB001CC2C5 /* AlbumDiaryViewController.swift */; };
+		1E40AB7220138C0C001CC2C5 /* AlbumDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB7120138C0C001CC2C5 /* AlbumDiary.storyboard */; };
 		1E40AB762013A67D001CC2C5 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */; };
 		1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */; };
 		1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */; };
@@ -69,9 +72,14 @@
 		1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosViewController.swift; sourceTree = "<group>"; };
 		1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 		1E290C88202B578400B6FCC4 /* AnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
-		1E3E56DB2084E6B500BEBCF7 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
-		1E3E56DD2084E6C700BEBCF7 /* NormalButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalButton.xib; sourceTree = "<group>"; };
+		1E3E56DB2084E6B500BEBCF7 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		1E3E56DD2084E6C700BEBCF7 /* CustomHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
 		1E3E56DF2084E89D00BEBCF7 /* OnClickDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnClickDelegate.swift; sourceTree = "<group>"; };
+		1E3E56E320862EAD00BEBCF7 /* BasicHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHeader.swift; sourceTree = "<group>"; };
+		1E3E56E520862EBB00BEBCF7 /* BasicHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicHeader.xib; sourceTree = "<group>"; };
+		1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sbw_parts_tab_selected@3x.png"; sourceTree = "<group>"; };
+		1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sbw_parts_tab_selected@2x.png"; sourceTree = "<group>"; };
+		1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sbw_parts_tab_selected.png; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,12 +94,10 @@
 		1E40AB5620124C1F001CC2C5 /* SplashViewContrlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewContrlller.swift; sourceTree = "<group>"; };
 		1E40AB5820124C67001CC2C5 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeViewController.swift; sourceTree = "<group>"; };
-		1E40AB6720138B90001CC2C5 /* ExplainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
-		1E40AB6920138B9E001CC2C5 /* Explain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explain.storyboard; sourceTree = "<group>"; };
 		1E40AB6B20138BD1001CC2C5 /* TakePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotosViewController.swift; sourceTree = "<group>"; };
 		1E40AB6D20138BE2001CC2C5 /* TakePhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakePhotos.storyboard; sourceTree = "<group>"; };
-		1E40AB6F20138BFB001CC2C5 /* AdminAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAccountViewController.swift; sourceTree = "<group>"; };
-		1E40AB7120138C0C001CC2C5 /* AdminAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminAccount.storyboard; sourceTree = "<group>"; };
+		1E40AB6F20138BFB001CC2C5 /* AlbumDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDiaryViewController.swift; sourceTree = "<group>"; };
+		1E40AB7120138C0C001CC2C5 /* AlbumDiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumDiary.storyboard; sourceTree = "<group>"; };
 		1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
 		1E842B4A201D666C009E26DB /* ChoosePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotosViewController.swift; sourceTree = "<group>"; };
@@ -147,11 +153,10 @@
 				1E842B56201D67C6009E26DB /* resources */,
 				1E40AB5520124BE3001CC2C5 /* common */,
 				1E40AB5420124AEC001CC2C5 /* splash */,
-				1E40AB6520138A96001CC2C5 /* explain */,
 				1E40AB5B20124E87001CC2C5 /* album_home */,
 				1E842B49201D663E009E26DB /* choose_photos */,
 				1E40AB6420138A6E001CC2C5 /* take_photos */,
-				1E40AB6620138B08001CC2C5 /* admin_account */,
+				1E40AB6620138B08001CC2C5 /* user_account */,
 				1E40AB3A20124ACF001CC2C5 /* GajumalTests */,
 				1E40AB4520124ACF001CC2C5 /* GajumalUITests */,
 				1E40AB2420124ACE001CC2C5 /* Products */,
@@ -223,22 +228,13 @@
 			path = take_photos;
 			sourceTree = "<group>";
 		};
-		1E40AB6520138A96001CC2C5 /* explain */ = {
+		1E40AB6620138B08001CC2C5 /* user_account */ = {
 			isa = PBXGroup;
 			children = (
-				1E40AB6720138B90001CC2C5 /* ExplainViewController.swift */,
-				1E40AB6920138B9E001CC2C5 /* Explain.storyboard */,
+				1E40AB6F20138BFB001CC2C5 /* AlbumDiaryViewController.swift */,
+				1E40AB7120138C0C001CC2C5 /* AlbumDiary.storyboard */,
 			);
-			path = explain;
-			sourceTree = "<group>";
-		};
-		1E40AB6620138B08001CC2C5 /* admin_account */ = {
-			isa = PBXGroup;
-			children = (
-				1E40AB6F20138BFB001CC2C5 /* AdminAccountViewController.swift */,
-				1E40AB7120138C0C001CC2C5 /* AdminAccount.storyboard */,
-			);
-			path = admin_account;
+			path = user_account;
 			sourceTree = "<group>";
 		};
 		1E842B49201D663E009E26DB /* choose_photos */ = {
@@ -256,6 +252,9 @@
 		1E842B56201D67C6009E26DB /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */,
+				1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */,
+				1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */,
 				1EE6580120838D5B00D7ADD7 /* sbw_parts_down_arrow.png */,
 				1EE6580220838D5B00D7ADD7 /* sbw_parts_down_arrow@2x.png */,
 				1EE6580020838D5A00D7ADD7 /* sbw_parts_down_arrow@3x.png */,
@@ -274,9 +273,11 @@
 			children = (
 				1EE657F72083731600D7ADD7 /* PhotoViewCell.xib */,
 				1EE657FC2083791500D7ADD7 /* PhotoViewCell.swift */,
-				1E3E56DB2084E6B500BEBCF7 /* NormalButton.swift */,
-				1E3E56DD2084E6C700BEBCF7 /* NormalButton.xib */,
+				1E3E56DB2084E6B500BEBCF7 /* CustomHeader.swift */,
+				1E3E56DD2084E6C700BEBCF7 /* CustomHeader.xib */,
 				1E3E56DF2084E89D00BEBCF7 /* OnClickDelegate.swift */,
+				1E3E56E320862EAD00BEBCF7 /* BasicHeader.swift */,
+				1E3E56E520862EBB00BEBCF7 /* BasicHeader.xib */,
 			);
 			path = widget;
 			sourceTree = "<group>";
@@ -409,25 +410,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E40AB6A20138B9E001CC2C5 /* Explain.storyboard in Resources */,
 				1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */,
 				1EE6580A20838F3B00D7ADD7 /* GlobalMenu.storyboard in Resources */,
 				1E842B54201D67B9009E26DB /* notice.png in Resources */,
 				1E842B53201D67B9009E26DB /* logo (1).png in Resources */,
-				1E40AB7220138C0C001CC2C5 /* AdminAccount.storyboard in Resources */,
+				1E40AB7220138C0C001CC2C5 /* AlbumDiary.storyboard in Resources */,
 				1EE6580520838D5B00D7ADD7 /* sbw_parts_down_arrow@2x.png in Resources */,
 				1E842B58201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg in Resources */,
 				1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */,
 				1E40AB6E20138BE2001CC2C5 /* TakePhotos.storyboard in Resources */,
-				1E3E56DE2084E6C700BEBCF7 /* NormalButton.xib in Resources */,
+				1E3E56DE2084E6C700BEBCF7 /* CustomHeader.xib in Resources */,
 				1EDA1C50201C548100739707 /* AlbumHome.storyboard in Resources */,
 				1EE6580420838D5B00D7ADD7 /* sbw_parts_down_arrow.png in Resources */,
 				1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */,
 				1EE6580320838D5B00D7ADD7 /* sbw_parts_down_arrow@3x.png in Resources */,
+				1E3E56E620862EBB00BEBCF7 /* BasicHeader.xib in Resources */,
 				1E842B55201D67B9009E26DB /* logo (2).png in Resources */,
+				1E3E56EC2086442900BEBCF7 /* sbw_parts_tab_selected.png in Resources */,
+				1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */,
 				1EE657FF20838AD600D7ADD7 /* delete.png in Resources */,
 				1EE657F92083731600D7ADD7 /* PhotoViewCell.xib in Resources */,
 				1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */,
+				1E3E56EB2086442900BEBCF7 /* sbw_parts_tab_selected@2x.png in Resources */,
 				1E40AB5920124C67001CC2C5 /* Splash.storyboard in Resources */,
 				1EE657FB2083779500D7ADD7 /* check.png in Resources */,
 			);
@@ -454,22 +458,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3E56E420862EAE00BEBCF7 /* BasicHeader.swift in Sources */,
 				1E40AB6C20138BD1001CC2C5 /* TakePhotosViewController.swift in Sources */,
 				1EE657FD2083791500D7ADD7 /* PhotoViewCell.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
 				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,
-				1E40AB6820138B90001CC2C5 /* ExplainViewController.swift in Sources */,
 				1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */,
 				1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */,
-				1E40AB7020138BFB001CC2C5 /* AdminAccountViewController.swift in Sources */,
+				1E40AB7020138BFB001CC2C5 /* AlbumDiaryViewController.swift in Sources */,
 				1EE6580820838EDB00D7ADD7 /* GlobalMenuViewController.swift in Sources */,
 				1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */,
 				1E40AB762013A67D001CC2C5 /* AlbumTableViewCell.swift in Sources */,
 				1EE6580C2083924400D7ADD7 /* Common.swift in Sources */,
 				1E290C87202B51EF00B6FCC4 /* AnimatedImageView.swift in Sources */,
 				1E3E56E02084E89D00BEBCF7 /* OnClickDelegate.swift in Sources */,
-				1E3E56DC2084E6B500BEBCF7 /* NormalButton.swift in Sources */,
+				1E3E56DC2084E6B500BEBCF7 /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

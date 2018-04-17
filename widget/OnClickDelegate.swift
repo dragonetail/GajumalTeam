@@ -7,14 +7,14 @@
 //
 
 protocol OnClickDelegate {
-    
     func onClick(_ sender : AnyObject?)
-    
 }
 
-protocol OnDoubleBtnClickDelegate {
-    
-    func onLeftBtnClick()
+protocol RightBtnClickDelegate {
     func onRightBtnClick()
-    
 }
+
+protocol LeftBtnClickDelegate {
+    func onLeftBtnClick()
+}
+

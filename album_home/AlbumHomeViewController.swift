@@ -8,13 +8,15 @@
 
 import UIKit
 
-class AlbumHomeViewController: UIViewController {
+class AlbumHomeViewController: UIViewController, OnClickDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var normalButton: NormalButton!
+    @IBOutlet weak var basicHeader: BasicHeader!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        basicHeader.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "AlbumTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
@@ -28,6 +30,10 @@ class AlbumHomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    func onClick(_ sender: AnyObject?) {
+        print("centerrrrrrrrrrrrrrrrrrrrrrr")
     }
     
 }
