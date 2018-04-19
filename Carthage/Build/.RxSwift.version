@@ -1,0 +1,21 @@
+{
+  "commitish" : "4.1.2",
+  "iOS" : [
+    {
+      "name" : "RxTest",
+      "hash" : "bce626282b3598fb14e3bbb707086795e03f442df49b158e3e78975df3876711"
+    },
+    {
+      "name" : "RxBlocking",
+      "hash" : "d2384478cf0f7c630cc05dd46595e3de86b2b79afe7d440fab4d71c79698156f"
+    },
+    {
+      "name" : "RxCocoa",
+      "hash" : "1af5b62e754de4bef341be669aeaf27de10e5298f0a162529b172064c454e061"
+    },
+    {
+      "name" : "RxSwift",
+      "hash" : "f2d43b93e143f9015e0245be486d75d8ec70e3bb62cff15e10758955287c886b"
+    }
+  ]
+}
