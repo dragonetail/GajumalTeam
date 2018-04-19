@@ -1,0 +1,6 @@
+framework module Pods_GajumalUITests {
+  umbrella header "Pods-GajumalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
