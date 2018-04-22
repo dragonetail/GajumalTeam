@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="el1-Az-s5F">
+            <objects>
+                <viewController id="euC-2A-rIF" customClass="SettingAccountViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1I-iW-n9F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8H-ct-ApA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABQ-L7-kSI">
+                                        <rect key="frame" x="169" y="42" width="36" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E8H-ct-ApA" secondAttribute="height" multiplier="414:94" id="4ix-nf-bZW"/>
+                                    <constraint firstItem="ABQ-L7-kSI" firstAttribute="top" secondItem="E8H-ct-ApA" secondAttribute="top" constant="42" id="DDG-jo-epi"/>
+                                    <constraint firstItem="ABQ-L7-kSI" firstAttribute="centerX" secondItem="E8H-ct-ApA" secondAttribute="centerX" id="Dft-sA-xZs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Jdj-PC-1Iu">
+                                <rect key="frame" x="0.0" y="85" width="375" height="644"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jdj-PC-1Iu" firstAttribute="leading" secondItem="EdD-00-SPX" secondAttribute="leading" id="3be-cM-ATr"/>
+                            <constraint firstItem="EdD-00-SPX" firstAttribute="bottom" secondItem="Jdj-PC-1Iu" secondAttribute="bottom" id="7Li-Tb-WIi"/>
+                            <constraint firstItem="E8H-ct-ApA" firstAttribute="top" secondItem="l1I-iW-n9F" secondAttribute="top" id="DjD-tQ-uLq"/>
+                            <constraint firstItem="E8H-ct-ApA" firstAttribute="trailing" secondItem="EdD-00-SPX" secondAttribute="trailing" id="PJg-wC-qWT"/>
+                            <constraint firstItem="E8H-ct-ApA" firstAttribute="leading" secondItem="EdD-00-SPX" secondAttribute="leading" id="cZO-Sa-RyU"/>
+                            <constraint firstItem="EdD-00-SPX" firstAttribute="trailing" secondItem="Jdj-PC-1Iu" secondAttribute="trailing" id="f6B-nb-XqH"/>
+                            <constraint firstItem="Jdj-PC-1Iu" firstAttribute="top" secondItem="E8H-ct-ApA" secondAttribute="bottom" id="lUe-fW-Aqj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EdD-00-SPX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gBp-Vv-Omk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYX-Ou-oDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+</document>

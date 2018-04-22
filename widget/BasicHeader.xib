@@ -39,9 +39,19 @@
                         <constraint firstAttribute="width" constant="15" id="sav-oa-yGf"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfe-Df-g4m">
+                    <rect key="frame" x="0.0" y="84" width="375" height="0.5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="N3O-97-bRO"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="hrf-1U-P98" firstAttribute="bottom" secondItem="zfe-Df-g4m" secondAttribute="bottom" id="Iap-Kk-eXg"/>
+                <constraint firstItem="zfe-Df-g4m" firstAttribute="leading" secondItem="Joh-0p-gaF" secondAttribute="leading" id="Xlm-Np-5HO"/>
+                <constraint firstAttribute="trailing" secondItem="zfe-Df-g4m" secondAttribute="trailing" id="dT1-TY-LG1"/>
                 <constraint firstAttribute="bottom" secondItem="TJb-XZ-IKK" secondAttribute="bottom" constant="10" id="h79-he-g4j"/>
                 <constraint firstItem="bQu-d6-VAd" firstAttribute="centerY" secondItem="TJb-XZ-IKK" secondAttribute="centerY" id="l3p-Ah-30A"/>
                 <constraint firstItem="TJb-XZ-IKK" firstAttribute="centerX" secondItem="Joh-0p-gaF" secondAttribute="centerX" id="n7V-lr-bMK"/>
@@ -49,7 +59,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="hrf-1U-P98"/>
-            <point key="canvasLocation" x="138" y="55"/>
+            <point key="canvasLocation" x="137.5" y="54.5"/>
         </view>
     </objects>
     <resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fPF-UN-0Uw">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Hy-mK-4oY">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,51 +12,66 @@
     </dependencies>
     <scenes>
         <!--Item-->
-        <scene sceneID="kTL-N8-SeA">
+        <scene sceneID="ZzV-RE-c4u">
             <objects>
-                <viewController id="fPF-UN-0Uw" customClass="AlbumHomeViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jNs-gO-suU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <viewController id="5Hy-mK-4oY" customClass="AlbumHomeViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LjH-Xa-lcd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzp-BJ-lla" customClass="BasicHeader" customModule="Gajumal" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLu-8O-jtc" customClass="BasicHeader" customModule="Gajumal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tzp-BJ-lla" secondAttribute="height" multiplier="414:94" id="VZG-G9-qsK"/>
+                                    <constraint firstAttribute="width" secondItem="yLu-8O-jtc" secondAttribute="height" multiplier="414:94" id="6wn-OR-XNq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enable" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="2018"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a1v-A6-mNP">
-                                <rect key="frame" x="0.0" y="85" width="375" height="644"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsX-ys-enm">
+                                <rect key="frame" x="310" y="543" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="2pq-GG-BpI"/>
+                                    <constraint firstAttribute="height" constant="45" id="Jp9-Ab-DH0"/>
+                                    <constraint firstAttribute="width" secondItem="KsX-ys-enm" secondAttribute="height" multiplier="1:1" id="hme-0v-NBP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icons8-追加-filled-50.png"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uiW-3r-Lul">
+                                <rect key="frame" x="0.0" y="85" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tzp-BJ-lla" firstAttribute="trailing" secondItem="gR6-if-UXS" secondAttribute="trailing" id="2ob-EN-JW0"/>
-                            <constraint firstItem="a1v-A6-mNP" firstAttribute="leading" secondItem="gR6-if-UXS" secondAttribute="leading" id="9rr-yP-IVv"/>
-                            <constraint firstItem="a1v-A6-mNP" firstAttribute="top" secondItem="Tzp-BJ-lla" secondAttribute="bottom" id="CLq-It-dvr"/>
-                            <constraint firstItem="gR6-if-UXS" firstAttribute="bottom" secondItem="a1v-A6-mNP" secondAttribute="bottom" id="CtD-wP-RLQ"/>
-                            <constraint firstItem="Tzp-BJ-lla" firstAttribute="top" secondItem="jNs-gO-suU" secondAttribute="top" id="Dda-mb-Bh2"/>
-                            <constraint firstItem="Tzp-BJ-lla" firstAttribute="leading" secondItem="gR6-if-UXS" secondAttribute="leading" id="Lsv-BF-SXW"/>
-                            <constraint firstItem="a1v-A6-mNP" firstAttribute="trailing" secondItem="gR6-if-UXS" secondAttribute="trailing" id="th4-C6-ODP"/>
+                            <constraint firstItem="uiW-3r-Lul" firstAttribute="leading" secondItem="vP5-0U-KzC" secondAttribute="leading" id="1R3-Yi-YnL"/>
+                            <constraint firstItem="vP5-0U-KzC" firstAttribute="trailing" secondItem="uiW-3r-Lul" secondAttribute="trailing" id="4h9-VW-aj8"/>
+                            <constraint firstItem="vP5-0U-KzC" firstAttribute="bottom" secondItem="KsX-ys-enm" secondAttribute="bottom" constant="30" id="57D-7g-b01"/>
+                            <constraint firstItem="uiW-3r-Lul" firstAttribute="top" secondItem="yLu-8O-jtc" secondAttribute="bottom" id="70L-XF-KOX"/>
+                            <constraint firstItem="yLu-8O-jtc" firstAttribute="leading" secondItem="vP5-0U-KzC" secondAttribute="leading" id="EnS-rH-Qce"/>
+                            <constraint firstItem="vP5-0U-KzC" firstAttribute="trailing" secondItem="KsX-ys-enm" secondAttribute="trailing" constant="20" id="Jvz-K0-GdS"/>
+                            <constraint firstItem="yLu-8O-jtc" firstAttribute="top" secondItem="LjH-Xa-lcd" secondAttribute="top" id="VZD-qh-lpB"/>
+                            <constraint firstItem="yLu-8O-jtc" firstAttribute="trailing" secondItem="vP5-0U-KzC" secondAttribute="trailing" id="hKU-zq-1YP"/>
+                            <constraint firstItem="vP5-0U-KzC" firstAttribute="bottom" secondItem="uiW-3r-Lul" secondAttribute="bottom" id="nmE-ox-xm6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gR6-if-UXS"/>
+                        <viewLayoutGuide key="safeArea" id="vP5-0U-KzC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QFY-Iy-U4I"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="D9H-Cp-2ys"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="basicHeader" destination="Tzp-BJ-lla" id="JaR-Zs-71U"/>
-                        <outlet property="tableView" destination="a1v-A6-mNP" id="p1h-Dx-GvH"/>
+                        <outlet property="basicHeader" destination="yLu-8O-jtc" id="2Wa-md-aXi"/>
+                        <outlet property="plusButton" destination="KsX-ys-enm" id="mbC-gT-GeC"/>
+                        <outlet property="tableView" destination="uiW-3r-Lul" id="UmY-lG-yVy"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="suz-rn-79j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDr-QV-Pjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-951.20000000000005" y="1130.5418719211823"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-追加-filled-50.png" width="50" height="50"/>
+    </resources>
 </document>

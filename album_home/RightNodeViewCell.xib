@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4B8-GO-Yzl" customClass="RightNodeViewCell" customModule="Gajumal">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4B8-GO-Yzl" id="6yR-Rb-bnb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xn-xY-DTd">
+                        <rect key="frame" x="159.5" y="0.0" width="1" height="149.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="syh-gu-bM9"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-共有2-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="SBc-3s-z0v">
+                        <rect key="frame" x="147.5" y="62.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="glU-eV-bOb"/>
+                            <constraint firstAttribute="width" secondItem="SBc-3s-z0v" secondAttribute="height" multiplier="1:1" id="p6x-Yk-eMc"/>
+                            <constraint firstAttribute="height" constant="25" id="xUH-IZ-box"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-tk-NXP">
+                        <rect key="frame" x="185.5" y="10" width="129.5" height="134.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJe-y5-Haa">
+                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金沢旅行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0w-8s-77x">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/05/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qw-ny-roG">
+                                        <rect key="frame" x="0.0" y="17" width="35" height="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="B0w-8s-77x" firstAttribute="top" secondItem="aJe-y5-Haa" secondAttribute="top" id="S5f-kt-oV7"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Qw-ny-roG" secondAttribute="bottom" id="a2V-d0-AAl"/>
+                                    <constraint firstAttribute="height" constant="25" id="eUU-Jd-Bd7"/>
+                                    <constraint firstItem="6Qw-ny-roG" firstAttribute="leading" secondItem="aJe-y5-Haa" secondAttribute="leading" id="eei-6T-Sim"/>
+                                    <constraint firstItem="B0w-8s-77x" firstAttribute="leading" secondItem="aJe-y5-Haa" secondAttribute="leading" id="g1g-Dr-vLN"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Malaysia_Skyscrapers_447585.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AiD-Cy-NJJ">
+                                <rect key="frame" x="0.0" y="25" width="129.5" height="109.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aJe-y5-Haa" secondAttribute="trailing" id="0ih-bu-vR7"/>
+                            <constraint firstAttribute="trailing" secondItem="AiD-Cy-NJJ" secondAttribute="trailing" id="2kr-hL-NNL"/>
+                            <constraint firstItem="aJe-y5-Haa" firstAttribute="leading" secondItem="a3U-tk-NXP" secondAttribute="leading" id="3Vb-nu-9cq"/>
+                            <constraint firstItem="aJe-y5-Haa" firstAttribute="top" secondItem="a3U-tk-NXP" secondAttribute="top" id="5KJ-v4-CRE"/>
+                            <constraint firstItem="AiD-Cy-NJJ" firstAttribute="top" secondItem="aJe-y5-Haa" secondAttribute="bottom" id="5gr-j5-6AP"/>
+                            <constraint firstAttribute="bottom" secondItem="AiD-Cy-NJJ" secondAttribute="bottom" id="Aqf-9h-2Gx"/>
+                            <constraint firstItem="AiD-Cy-NJJ" firstAttribute="leading" secondItem="a3U-tk-NXP" secondAttribute="leading" id="TyX-EM-pBb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-vw-ozf">
+                        <rect key="frame" x="175.5" y="75" width="10" height="5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RFB-vw-ozf" secondAttribute="height" multiplier="2:1" id="Vb5-xw-wPG"/>
+                            <constraint firstAttribute="width" constant="10" id="jO8-sc-ISB"/>
+                            <constraint firstAttribute="height" constant="5" id="qb5-Ks-FdR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RFB-vw-ozf" firstAttribute="leading" secondItem="SBc-3s-z0v" secondAttribute="trailing" constant="3" id="4Ic-o6-OQq"/>
+                    <constraint firstAttribute="trailing" secondItem="a3U-tk-NXP" secondAttribute="trailing" constant="5" id="BnW-ka-mAr"/>
+                    <constraint firstItem="0Xn-xY-DTd" firstAttribute="centerX" secondItem="SBc-3s-z0v" secondAttribute="centerX" id="EXn-iZ-YpP"/>
+                    <constraint firstItem="SBc-3s-z0v" firstAttribute="centerY" secondItem="6yR-Rb-bnb" secondAttribute="centerY" id="Ejt-8s-iCs"/>
+                    <constraint firstItem="a3U-tk-NXP" firstAttribute="centerY" secondItem="RFB-vw-ozf" secondAttribute="centerY" id="EvK-qe-Qde"/>
+                    <constraint firstItem="0Xn-xY-DTd" firstAttribute="centerX" secondItem="6yR-Rb-bnb" secondAttribute="centerX" id="N4d-mB-rOy"/>
+                    <constraint firstAttribute="bottom" secondItem="a3U-tk-NXP" secondAttribute="bottom" constant="5" id="ZSB-Zu-WtY"/>
+                    <constraint firstItem="0Xn-xY-DTd" firstAttribute="centerY" secondItem="6yR-Rb-bnb" secondAttribute="centerY" id="agK-FD-jJh"/>
+                    <constraint firstAttribute="bottom" secondItem="0Xn-xY-DTd" secondAttribute="bottom" id="exc-OH-1Yn"/>
+                    <constraint firstItem="a3U-tk-NXP" firstAttribute="top" secondItem="6yR-Rb-bnb" secondAttribute="top" constant="10" id="meX-Aa-2cp"/>
+                    <constraint firstItem="a3U-tk-NXP" firstAttribute="leading" secondItem="RFB-vw-ozf" secondAttribute="trailing" id="tWT-f3-Q2A"/>
+                    <constraint firstItem="0Xn-xY-DTd" firstAttribute="top" secondItem="6yR-Rb-bnb" secondAttribute="top" id="yfF-28-fhD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="URb-Jz-oII"/>
+            <connections>
+                <outlet property="arrowView" destination="RFB-vw-ozf" id="9Xw-N5-aF3"/>
+                <outlet property="mainView" destination="a3U-tk-NXP" id="t1t-2V-61d"/>
+                <outlet property="topView" destination="aJe-y5-Haa" id="If4-eg-rh1"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="-50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Malaysia_Skyscrapers_447585.jpg" width="1280" height="800"/>
+        <image name="icons8-共有2-50.png" width="50" height="50"/>
+    </resources>
+</document>

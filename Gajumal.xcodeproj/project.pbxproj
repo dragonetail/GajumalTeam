@@ -18,6 +18,17 @@
 		1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */; };
 		1E3E56EB2086442900BEBCF7 /* sbw_parts_tab_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */; };
 		1E3E56EC2086442900BEBCF7 /* sbw_parts_tab_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */; };
+		1E3E56ED2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; };
+		1E3E56EE2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E3E56F22088F22B00BEBCF7 /* SettingAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56F12088F22B00BEBCF7 /* SettingAccountViewController.swift */; };
+		1E3E56F42088F37F00BEBCF7 /* SettingAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56F32088F37F00BEBCF7 /* SettingAccount.storyboard */; };
+		1E3E56F7208B6DBB00BEBCF7 /* LeftNodeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */; };
+		1E3E56F8208B6DBB00BEBCF7 /* LeftNodeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */; };
+		1E3E56FE208B6E0A00BEBCF7 /* RightNodeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */; };
+		1E3E56FF208B6E0A00BEBCF7 /* RightNodeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56FD208B6E0A00BEBCF7 /* RightNodeViewCell.xib */; };
+		1E3E5701208B7EA700BEBCF7 /* icons8-共有2-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5700208B7EA700BEBCF7 /* icons8-共有2-50.png */; };
+		1E3E5720208CC06900BEBCF7 /* icons8-追加-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E571F208CC06900BEBCF7 /* icons8-追加-filled-50.png */; };
+		1E3E5724208CD20600BEBCF7 /* AlbumHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -38,7 +49,6 @@
 		1E842B54201D67B9009E26DB /* notice.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B51201D67B8009E26DB /* notice.png */; };
 		1E842B55201D67B9009E26DB /* logo (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B52201D67B9009E26DB /* logo (2).png */; };
 		1E842B58201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E842B57201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg */; };
-		1EDA1C50201C548100739707 /* AlbumHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA1C4F201C548100739707 /* AlbumHome.storyboard */; };
 		1EE657F92083731600D7ADD7 /* PhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EE657F72083731600D7ADD7 /* PhotoViewCell.xib */; };
 		1EE657FB2083779500D7ADD7 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE657FA2083779400D7ADD7 /* check.png */; };
 		1EE657FD2083791500D7ADD7 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE657FC2083791500D7ADD7 /* PhotoViewCell.swift */; };
@@ -54,7 +64,6 @@
 		6B05355F2087BCE1006964D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B05355E2087BCE1006964D3 /* GoogleService-Info.plist */; };
 		6B0535612087BFE1006964D3 /* LoginedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0535602087BFE1006964D3 /* LoginedViewController.swift */; };
 		799DF4C88A0E11A2B9EA2B13 /* Pods_GajumalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE50DEED1F88E5D89F90914 /* Pods_GajumalTests.framework */; };
-		CCCD6FB8DCEDAD47F7BBC721 /* Pods_Gajumal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; };
 		E872977E4137167DDEA7A44D /* Pods_GajumalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ED6255D196ADB56E50DFFB /* Pods_GajumalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +84,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E3E56EF2088E2C000BEBCF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E3E56EE2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1E290C84202B468300B6FCC4 /* DetailPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosViewController.swift; sourceTree = "<group>"; };
 		1E290C86202B51EF00B6FCC4 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
@@ -87,6 +110,15 @@
 		1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sbw_parts_tab_selected@3x.png"; sourceTree = "<group>"; };
 		1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sbw_parts_tab_selected@2x.png"; sourceTree = "<group>"; };
 		1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sbw_parts_tab_selected.png; sourceTree = "<group>"; };
+		1E3E56F12088F22B00BEBCF7 /* SettingAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAccountViewController.swift; sourceTree = "<group>"; };
+		1E3E56F32088F37F00BEBCF7 /* SettingAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingAccount.storyboard; sourceTree = "<group>"; };
+		1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNodeViewCell.swift; sourceTree = "<group>"; };
+		1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftNodeViewCell.xib; sourceTree = "<group>"; };
+		1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNodeViewCell.swift; sourceTree = "<group>"; };
+		1E3E56FD208B6E0A00BEBCF7 /* RightNodeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightNodeViewCell.xib; sourceTree = "<group>"; };
+		1E3E5700208B7EA700BEBCF7 /* icons8-共有2-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-共有2-50.png"; sourceTree = "<group>"; };
+		1E3E571F208CC06900BEBCF7 /* icons8-追加-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-追加-filled-50.png"; sourceTree = "<group>"; };
+		1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumHome.storyboard; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +145,6 @@
 		1E842B51201D67B8009E26DB /* notice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notice.png; sourceTree = "<group>"; };
 		1E842B52201D67B9009E26DB /* logo (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo (2).png"; sourceTree = "<group>"; };
 		1E842B57201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Malaysia_Skyscrapers_447585.jpg; sourceTree = "<group>"; };
-		1EDA1C4F201C548100739707 /* AlbumHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumHome.storyboard; sourceTree = "<group>"; };
 		1EE657F72083731600D7ADD7 /* PhotoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewCell.xib; sourceTree = "<group>"; };
 		1EE657FA2083779400D7ADD7 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		1EE657FC2083791500D7ADD7 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
@@ -145,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCD6FB8DCEDAD47F7BBC721 /* Pods_Gajumal.framework in Frameworks */,
+				1E3E56ED2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +199,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E3E56F02088F1ED00BEBCF7 /* setting_account */ = {
+			isa = PBXGroup;
+			children = (
+				1E3E56F12088F22B00BEBCF7 /* SettingAccountViewController.swift */,
+				1E3E56F32088F37F00BEBCF7 /* SettingAccount.storyboard */,
+			);
+			path = setting_account;
+			sourceTree = "<group>";
+		};
 		1E40AB1A20124ACE001CC2C5 = {
 			isa = PBXGroup;
 			children = (
+				1E3E56F02088F1ED00BEBCF7 /* setting_account */,
 				1EE658112083AF7600D7ADD7 /* Gajumal */,
 				1EE6580620838E9300D7ADD7 /* global_menu */,
 				1EE657F5208372DB00D7ADD7 /* widget */,
@@ -181,7 +222,7 @@
 				1E40AB5B20124E87001CC2C5 /* album_home */,
 				1E842B49201D663E009E26DB /* choose_photos */,
 				1E40AB6420138A6E001CC2C5 /* take_photos */,
-				1E40AB6620138B08001CC2C5 /* user_account */,
+				1E40AB6620138B08001CC2C5 /* album_diary */,
 				1E40AB3A20124ACF001CC2C5 /* GajumalTests */,
 				1E40AB4520124ACF001CC2C5 /* GajumalUITests */,
 				1E40AB2420124ACE001CC2C5 /* Products */,
@@ -239,9 +280,13 @@
 			isa = PBXGroup;
 			children = (
 				1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */,
-				1EDA1C4F201C548100739707 /* AlbumHome.storyboard */,
+				1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */,
 				1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */,
 				1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */,
+				1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */,
+				1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */,
+				1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */,
+				1E3E56FD208B6E0A00BEBCF7 /* RightNodeViewCell.xib */,
 			);
 			path = album_home;
 			sourceTree = "<group>";
@@ -255,13 +300,13 @@
 			path = take_photos;
 			sourceTree = "<group>";
 		};
-		1E40AB6620138B08001CC2C5 /* user_account */ = {
+		1E40AB6620138B08001CC2C5 /* album_diary */ = {
 			isa = PBXGroup;
 			children = (
 				1E40AB6F20138BFB001CC2C5 /* AlbumDiaryViewController.swift */,
 				1E40AB7120138C0C001CC2C5 /* AlbumDiary.storyboard */,
 			);
-			path = user_account;
+			path = album_diary;
 			sourceTree = "<group>";
 		};
 		1E842B49201D663E009E26DB /* choose_photos */ = {
@@ -279,6 +324,8 @@
 		1E842B56201D67C6009E26DB /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E3E571F208CC06900BEBCF7 /* icons8-追加-filled-50.png */,
+				1E3E5700208B7EA700BEBCF7 /* icons8-共有2-50.png */,
 				1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */,
 				1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */,
 				1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */,
@@ -378,6 +425,7 @@
 				1E40AB2120124ACE001CC2C5 /* Resources */,
 				8B894556775378AA2D0152A1 /* [CP] Embed Pods Frameworks */,
 				D43375D09070FE34B349B356 /* [CP] Copy Pods Resources */,
+				1E3E56EF2088E2C000BEBCF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,25 +530,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */,
+				1E3E56FF208B6E0A00BEBCF7 /* RightNodeViewCell.xib in Resources */,
 				1EE6580A20838F3B00D7ADD7 /* GlobalMenu.storyboard in Resources */,
 				1E842B54201D67B9009E26DB /* notice.png in Resources */,
+				1E3E5720208CC06900BEBCF7 /* icons8-追加-filled-50.png in Resources */,
+				1E3E5724208CD20600BEBCF7 /* AlbumHome.storyboard in Resources */,
 				6B05355A2087BA6D006964D3 /* SocialLogin.storyboard in Resources */,
 				1E842B53201D67B9009E26DB /* logo (1).png in Resources */,
+				1E3E56F8208B6DBB00BEBCF7 /* LeftNodeViewCell.xib in Resources */,
 				1E40AB7220138C0C001CC2C5 /* AlbumDiary.storyboard in Resources */,
 				1EE6580520838D5B00D7ADD7 /* sbw_parts_down_arrow@2x.png in Resources */,
 				1E842B58201D68BB009E26DB /* Malaysia_Skyscrapers_447585.jpg in Resources */,
 				1E40AB772013A67D001CC2C5 /* AlbumTableViewCell.xib in Resources */,
 				1E40AB6E20138BE2001CC2C5 /* TakePhotos.storyboard in Resources */,
 				1E3E56DE2084E6C700BEBCF7 /* CustomHeader.xib in Resources */,
-				1EDA1C50201C548100739707 /* AlbumHome.storyboard in Resources */,
 				1EE6580420838D5B00D7ADD7 /* sbw_parts_down_arrow.png in Resources */,
 				6B05355F2087BCE1006964D3 /* GoogleService-Info.plist in Resources */,
 				1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */,
+				1E3E56F42088F37F00BEBCF7 /* SettingAccount.storyboard in Resources */,
 				1EE6580320838D5B00D7ADD7 /* sbw_parts_down_arrow@3x.png in Resources */,
 				1E3E56E620862EBB00BEBCF7 /* BasicHeader.xib in Resources */,
 				1E842B55201D67B9009E26DB /* logo (2).png in Resources */,
 				1E3E56EC2086442900BEBCF7 /* sbw_parts_tab_selected.png in Resources */,
 				1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */,
+				1E3E5701208B7EA700BEBCF7 /* icons8-共有2-50.png in Resources */,
 				1EE657FF20838AD600D7ADD7 /* delete.png in Resources */,
 				1EE657F92083731600D7ADD7 /* PhotoViewCell.xib in Resources */,
 				1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */,
@@ -542,7 +595,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3459DE071FD85BAFADA8378A /* [CP] Embed Pods Frameworks */ = {
@@ -631,7 +684,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D43375D09070FE34B349B356 /* [CP] Copy Pods Resources */ = {
@@ -668,7 +721,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F15D1CA127F54C58765B9B5D /* [CP] Copy Pods Resources */ = {
@@ -696,12 +749,15 @@
 				1E3E56E420862EAE00BEBCF7 /* BasicHeader.swift in Sources */,
 				6B0535612087BFE1006964D3 /* LoginedViewController.swift in Sources */,
 				1E40AB6C20138BD1001CC2C5 /* TakePhotosViewController.swift in Sources */,
+				1E3E56FE208B6E0A00BEBCF7 /* RightNodeViewCell.swift in Sources */,
 				1EE657FD2083791500D7ADD7 /* PhotoViewCell.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
+				1E3E56F7208B6DBB00BEBCF7 /* LeftNodeViewCell.swift in Sources */,
 				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,
 				1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */,
 				1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */,
+				1E3E56F22088F22B00BEBCF7 /* SettingAccountViewController.swift in Sources */,
 				1E40AB7020138BFB001CC2C5 /* AlbumDiaryViewController.swift in Sources */,
 				1EE6580820838EDB00D7ADD7 /* GlobalMenuViewController.swift in Sources */,
 				1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */,
