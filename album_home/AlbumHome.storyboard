@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="width" secondItem="KsX-ys-enm" secondAttribute="height" multiplier="1:1" id="hme-0v-NBP"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="icons8-追加-filled-50.png"/>
+                                <connections>
+                                    <action selector="addAlbum:" destination="5Hy-mK-4oY" eventType="touchUpInside" id="AdP-3h-JMH"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uiW-3r-Lul">
                                 <rect key="frame" x="0.0" y="85" width="375" height="533"/>

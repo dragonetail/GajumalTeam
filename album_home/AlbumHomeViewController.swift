@@ -15,7 +15,6 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBOutlet weak var basicHeader: BasicHeader!
     @IBOutlet weak var plusButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         basicHeader.delegate = self
@@ -39,6 +38,11 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     func onClick(_ sender: AnyObject?) {
         print("aaaa")
     }
+    
+    @IBAction func addAlbum(_ sender: Any) {
+        
+    }
+    
 }
 
 extension AlbumHomeViewController : UITableViewDelegate {
