@@ -281,8 +281,6 @@
 			children = (
 				1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */,
 				1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */,
-				1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */,
-				1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */,
 				1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */,
 				1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */,
 				1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */,
@@ -352,6 +350,8 @@
 				1E3E56DF2084E89D00BEBCF7 /* OnClickDelegate.swift */,
 				1E3E56E320862EAD00BEBCF7 /* BasicHeader.swift */,
 				1E3E56E520862EBB00BEBCF7 /* BasicHeader.xib */,
+				1E40AB742013A67D001CC2C5 /* AlbumTableViewCell.swift */,
+				1E40AB752013A67D001CC2C5 /* AlbumTableViewCell.xib */,
 			);
 			path = widget;
 			sourceTree = "<group>";
