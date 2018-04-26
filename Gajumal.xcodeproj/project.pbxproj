@@ -29,6 +29,9 @@
 		1E3E5701208B7EA700BEBCF7 /* icons8-共有2-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5700208B7EA700BEBCF7 /* icons8-共有2-50.png */; };
 		1E3E5720208CC06900BEBCF7 /* icons8-追加-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E571F208CC06900BEBCF7 /* icons8-追加-filled-50.png */; };
 		1E3E5724208CD20600BEBCF7 /* AlbumHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */; };
+		1E3E5727208E36FD00BEBCF7 /* MakeAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E5726208E36FD00BEBCF7 /* MakeAlbumViewController.swift */; };
+		1E3E5729208E370C00BEBCF7 /* MakeAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5728208E370C00BEBCF7 /* MakeAlbum.storyboard */; };
+		1E404C34208F7D610021C9B8 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C33208F7D610021C9B8 /* GridViewCell.swift */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -119,6 +122,9 @@
 		1E3E5700208B7EA700BEBCF7 /* icons8-共有2-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-共有2-50.png"; sourceTree = "<group>"; };
 		1E3E571F208CC06900BEBCF7 /* icons8-追加-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-追加-filled-50.png"; sourceTree = "<group>"; };
 		1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumHome.storyboard; sourceTree = "<group>"; };
+		1E3E5726208E36FD00BEBCF7 /* MakeAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAlbumViewController.swift; sourceTree = "<group>"; };
+		1E3E5728208E370C00BEBCF7 /* MakeAlbum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeAlbum.storyboard; sourceTree = "<group>"; };
+		1E404C33208F7D610021C9B8 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +214,16 @@
 			path = setting_account;
 			sourceTree = "<group>";
 		};
+		1E3E5725208E36BB00BEBCF7 /* make_album */ = {
+			isa = PBXGroup;
+			children = (
+				1E3E5726208E36FD00BEBCF7 /* MakeAlbumViewController.swift */,
+				1E3E5728208E370C00BEBCF7 /* MakeAlbum.storyboard */,
+				1E404C33208F7D610021C9B8 /* GridViewCell.swift */,
+			);
+			path = make_album;
+			sourceTree = "<group>";
+		};
 		1E40AB1A20124ACE001CC2C5 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +236,7 @@
 				6B0535562087B8A0006964D3 /* social_login */,
 				1E40AB5420124AEC001CC2C5 /* splash */,
 				1E40AB5B20124E87001CC2C5 /* album_home */,
+				1E3E5725208E36BB00BEBCF7 /* make_album */,
 				1E842B49201D663E009E26DB /* choose_photos */,
 				1E40AB6420138A6E001CC2C5 /* take_photos */,
 				1E40AB6620138B08001CC2C5 /* album_diary */,
@@ -555,6 +572,7 @@
 				1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */,
 				1E3E5701208B7EA700BEBCF7 /* icons8-共有2-50.png in Resources */,
 				1EE657FF20838AD600D7ADD7 /* delete.png in Resources */,
+				1E3E5729208E370C00BEBCF7 /* MakeAlbum.storyboard in Resources */,
 				1EE657F92083731600D7ADD7 /* PhotoViewCell.xib in Resources */,
 				1E842B4D201D668B009E26DB /* ChoosePhotos.storyboard in Resources */,
 				1E3E56EB2086442900BEBCF7 /* sbw_parts_tab_selected@2x.png in Resources */,
@@ -752,6 +770,8 @@
 				1E3E56FE208B6E0A00BEBCF7 /* RightNodeViewCell.swift in Sources */,
 				1EE657FD2083791500D7ADD7 /* PhotoViewCell.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
+				1E404C34208F7D610021C9B8 /* GridViewCell.swift in Sources */,
+				1E3E5727208E36FD00BEBCF7 /* MakeAlbumViewController.swift in Sources */,
 				1E3E56F7208B6DBB00BEBCF7 /* LeftNodeViewCell.swift in Sources */,
 				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,

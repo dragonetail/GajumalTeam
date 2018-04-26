@@ -15,6 +15,8 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBOutlet weak var basicHeader: BasicHeader!
     @IBOutlet weak var plusButton: UIButton!
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         basicHeader.delegate = self
@@ -40,7 +42,10 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     }
     
     @IBAction func addAlbum(_ sender: Any) {
-        
+        let storyboard = UIStoryboard(name: "MakeAlbum", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "MakeAlbumViewController") as! MakeAlbumViewController
+        //appDelegate.navigationController?.pushViewController(detailVC, animated: true)
+        present(detailVC, animated: true, completion: nil)
     }
     
 }
