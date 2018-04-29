@@ -14,7 +14,7 @@
         <!--Item-->
         <scene sceneID="ZzV-RE-c4u">
             <objects>
-                <viewController id="5Hy-mK-4oY" customClass="AlbumHomeViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlbumHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Hy-mK-4oY" customClass="AlbumHomeViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjH-Xa-lcd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

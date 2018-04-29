@@ -253,11 +253,72 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		1E404C3E2096316F0021C9B8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C3F209632B50021C9B8 /* Presenter */,
+				1E404C40209632C60021C9B8 /* UI */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1E404C3F209632B50021C9B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E404C40209632C60021C9B8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C41209632D30021C9B8 /* ViewModel */,
+				1E404C42209632DC0021C9B8 /* View */,
+				1E404C43209632E90021C9B8 /* Cell */,
+				1E404C44209632F00021C9B8 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1E404C41209632D30021C9B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E404C42209632DC0021C9B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */,
+				1E3E56FD208B6E0A00BEBCF7 /* RightNodeViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E404C43209632E90021C9B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */,
+				1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1E404C44209632F00021C9B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		1E40AB1A20124ACE001CC2C5 = {
 			isa = PBXGroup;
 			children = (
 				1EE658112083AF7600D7ADD7 /* Gajumal */,
 				1E404C37209617DC0021C9B8 /* Application */,
+				1E404C3E2096316F0021C9B8 /* Presentation */,
 				1E3E56F02088F1ED00BEBCF7 /* setting_account */,
 				1EE6580620838E9300D7ADD7 /* global_menu */,
 				1EE657F5208372DB00D7ADD7 /* widget */,
@@ -326,12 +387,7 @@
 		1E40AB5B20124E87001CC2C5 /* album_home */ = {
 			isa = PBXGroup;
 			children = (
-				1E40AB5C20124EC9001CC2C5 /* AlbumHomeViewController.swift */,
 				1E3E5723208CD20600BEBCF7 /* AlbumHome.storyboard */,
-				1E3E56F5208B6DBB00BEBCF7 /* LeftNodeViewCell.swift */,
-				1E3E56F6208B6DBB00BEBCF7 /* LeftNodeViewCell.xib */,
-				1E3E56FC208B6E0A00BEBCF7 /* RightNodeViewCell.swift */,
-				1E3E56FD208B6E0A00BEBCF7 /* RightNodeViewCell.xib */,
 			);
 			path = album_home;
 			sourceTree = "<group>";

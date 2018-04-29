@@ -11,6 +11,7 @@ import UIKit
 struct AlbumHomeBuilder {
     func build() -> UIViewController {
         let wireframe = AlbumHomeWireframeImpl()
-        //let viewController = UIStoryboard(name: "AlbumHome")
+        let viewController = UIStoryboard(name: "AlbumHome", bundle: nil).instantiateViewController(withIdentifier: "AlbumHome") as! AlbumHomeViewController
+        return viewController
     }
 }

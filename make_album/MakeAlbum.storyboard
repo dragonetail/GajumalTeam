@@ -14,7 +14,7 @@
         <!--Make Album View Controller-->
         <scene sceneID="0rd-Cl-OQd">
             <objects>
-                <viewController storyboardIdentifier="MakeAlbumViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Dx-Vh-6Gs" customClass="MakeAlbumViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MakeAlbum" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Dx-Vh-6Gs" customClass="MakeAlbumViewController" customModule="Gajumal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sbT-oA-Xl2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
