@@ -13,9 +13,12 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var navigationController : UINavigationController?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Set RootViewController
+        //window?.rootViewController = UINavigationController(rootViewController: <#T##UIViewController#>)
+        
         FirebaseApp.configure()
         TWTRTwitter.sharedInstance().start(withConsumerKey:"wzUIgH1uyFRRhGCBhA2LBn8N7", consumerSecret:"qcWXlloxhTty8oq8JNxV0jj3UdCAgKACoxinGmXIY8EuVGchlc")
         return true

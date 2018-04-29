@@ -32,6 +32,7 @@
 		1E3E5727208E36FD00BEBCF7 /* MakeAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E5726208E36FD00BEBCF7 /* MakeAlbumViewController.swift */; };
 		1E3E5729208E370C00BEBCF7 /* MakeAlbum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E5728208E370C00BEBCF7 /* MakeAlbum.storyboard */; };
 		1E404C34208F7D610021C9B8 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C33208F7D610021C9B8 /* GridViewCell.swift */; };
+		1E404C3920961A100021C9B8 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C3820961A100021C9B8 /* HomeBuilder.swift */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -125,6 +126,7 @@
 		1E3E5726208E36FD00BEBCF7 /* MakeAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAlbumViewController.swift; sourceTree = "<group>"; };
 		1E3E5728208E370C00BEBCF7 /* MakeAlbum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeAlbum.storyboard; sourceTree = "<group>"; };
 		1E404C33208F7D610021C9B8 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		1E404C3820961A100021C9B8 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -224,11 +226,36 @@
 			path = make_album;
 			sourceTree = "<group>";
 		};
+		1E404C35209617B40021C9B8 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C3820961A100021C9B8 /* HomeBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		1E404C36209617CD0021C9B8 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		1E404C37209617DC0021C9B8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C35209617B40021C9B8 /* Builder */,
+				1E404C36209617CD0021C9B8 /* Wireframe */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		1E40AB1A20124ACE001CC2C5 = {
 			isa = PBXGroup;
 			children = (
-				1E3E56F02088F1ED00BEBCF7 /* setting_account */,
 				1EE658112083AF7600D7ADD7 /* Gajumal */,
+				1E404C37209617DC0021C9B8 /* Application */,
+				1E3E56F02088F1ED00BEBCF7 /* setting_account */,
 				1EE6580620838E9300D7ADD7 /* global_menu */,
 				1EE657F5208372DB00D7ADD7 /* widget */,
 				1E842B56201D67C6009E26DB /* resources */,
@@ -776,6 +803,7 @@
 				1E842B4B201D666C009E26DB /* ChoosePhotosViewController.swift in Sources */,
 				1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */,
 				1E290C89202B578400B6FCC4 /* AnimatedImage.swift in Sources */,
+				1E404C3920961A100021C9B8 /* HomeBuilder.swift in Sources */,
 				1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */,
 				1E3E56F22088F22B00BEBCF7 /* SettingAccountViewController.swift in Sources */,
 				1E40AB7020138BFB001CC2C5 /* AlbumDiaryViewController.swift in Sources */,
