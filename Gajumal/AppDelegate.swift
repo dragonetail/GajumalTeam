@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //window?.rootViewController = UINavigationController(rootViewController: <#T##UIViewController#>)
         
         FirebaseApp.configure()
-        TWTRTwitter.sharedInstance().start(withConsumerKey:"wzUIgH1uyFRRhGCBhA2LBn8N7", consumerSecret:"qcWXlloxhTty8oq8JNxV0jj3UdCAgKACoxinGmXIY8EuVGchlc")
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"", consumerSecret:"")
         return true
     }
     
