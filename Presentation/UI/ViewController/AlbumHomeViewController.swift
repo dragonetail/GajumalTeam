@@ -8,7 +8,10 @@
 
 import UIKit
 
-/// ノード上に見せるメインの画面
+protocol AlbumHomeViewInput: class {
+    func changedStatus(_:AlbumHomeStatus)
+}
+
 class AlbumHomeViewController: UIViewController, OnClickDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -44,17 +47,17 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBAction func addAlbum(_ sender: Any) {
         let storyboard = UIStoryboard(name: "MakeAlbum", bundle: nil)
         let detailVC = storyboard.instantiateViewController(withIdentifier: "MakeAlbumViewController") as! MakeAlbumViewController
-        //appDelegate.navigationController?.pushViewController(detailVC, animated: true)
         present(detailVC, animated: true, completion: nil)
     }
-    
 }
 
-extension AlbumHomeViewController : UITableViewDelegate {
+extension AlbumHomeViewController : AlbumHomeViewInput{
+    func changedStatus(_ status: AlbumHomeStatus) {
+        
+    }
 }
 
-extension AlbumHomeViewController : UITableViewDataSource {
-    
+extension AlbumHomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -62,6 +65,7 @@ extension AlbumHomeViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 || indexPath.row % 2 == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "leftCell") as! LeftNodeViewCell
+            //cell.updateCell(<#T##albumHomeModel: AlbumHomeViewModel##AlbumHomeViewModel#>)
             return cell
         }
         else {
@@ -73,5 +77,7 @@ extension AlbumHomeViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // nothing to do
+    }
 }

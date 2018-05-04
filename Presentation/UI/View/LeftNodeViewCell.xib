@@ -104,6 +104,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="albumDate" destination="cer-Bl-JnL" id="weL-P2-NHE"/>
+                <outlet property="albumTitle" destination="Mnp-VI-1ZR" id="MdD-0Z-vJz"/>
                 <outlet property="arrowView" destination="sMo-f4-vK2" id="e1o-Lb-vBi"/>
                 <outlet property="mainView" destination="9ci-bP-vXo" id="fak-4H-QkI"/>
                 <outlet property="topView" destination="VbC-zP-xYa" id="vGW-h1-Sdv"/>

@@ -15,26 +15,23 @@ class LeftNodeViewCell: UITableViewCell {
     @IBOutlet weak var arrowView: UIView!
     @IBOutlet weak var topView: UIView!
     
+    @IBOutlet weak var albumTitle: UILabel!
+    @IBOutlet weak var albumDate: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         customInit()
         makeTriangle()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    
+    func updateCell(_ albumHomeModel: AlbumHomeViewModel) {
+        self.albumTitle.text = albumHomeModel.title
+        self.albumDate.text = albumHomeModel.date
     }
     
     func customInit() {
-//        let layerView = UIView(frame: CGRect(x: 0, y: 0, width: mainView.frame.size.width, height: mainView.frame.size.height))
-//        layerView.center = mainView.center
-//        layerView.layer.borderWidth = 1.0
-        let rgb = UIColor(red: 22/255, green: 160/255, blue: 133/255, alpha: 1.0)
-        //layerView.layer.borderColor = UIColor.lightGray.cgColor
-//        layerView.layer.borderColor = rgb.cgColor
-//        mainView.addSubview(layerView)
+        //let rgb = UIColor(red: 22/255, green: 160/255, blue: 133/255, alpha: 1.0)
         topView.layer.borderColor = UIColor.lightGray.cgColor
         topView.layer.borderWidth = 1.0
     }
