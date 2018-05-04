@@ -40,6 +40,8 @@
 		1E404C51209CA37A0021C9B8 /* AlbumHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C50209CA37A0021C9B8 /* AlbumHomeUseCase.swift */; };
 		1E404C54209CA5DD0021C9B8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C53209CA5DD0021C9B8 /* ApiClient.swift */; };
 		1E404C56209CB74A0021C9B8 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C55209CB74A0021C9B8 /* ApiRequest.swift */; };
+		1E404C5A209CCC230021C9B8 /* AlbumHomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C59209CCC230021C9B8 /* AlbumHomeEntity.swift */; };
+		1E404C5C209CCDE60021C9B8 /* AlbumHomeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C5B209CCDE60021C9B8 /* AlbumHomeDataStore.swift */; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -141,6 +143,8 @@
 		1E404C50209CA37A0021C9B8 /* AlbumHomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeUseCase.swift; sourceTree = "<group>"; };
 		1E404C53209CA5DD0021C9B8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		1E404C55209CB74A0021C9B8 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		1E404C59209CCC230021C9B8 /* AlbumHomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeEntity.swift; sourceTree = "<group>"; };
+		1E404C5B209CCDE60021C9B8 /* AlbumHomeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeDataStore.swift; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -340,6 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				1E404C52209CA5BE0021C9B8 /* Network */,
+				1E404C57209CCBE70021C9B8 /* DataStore */,
+				1E404C58209CCBF90021C9B8 /* Entity */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -386,6 +392,22 @@
 				1E404C55209CB74A0021C9B8 /* ApiRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1E404C57209CCBE70021C9B8 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C5B209CCDE60021C9B8 /* AlbumHomeDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		1E404C58209CCBF90021C9B8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1E404C59209CCC230021C9B8 /* AlbumHomeEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		1E40AB1A20124ACE001CC2C5 = {
@@ -923,6 +945,7 @@
 				1EE657FD2083791500D7ADD7 /* PhotoViewCell.swift in Sources */,
 				1E404C46209C73BF0021C9B8 /* AlbumHomeViewModel.swift in Sources */,
 				1E40AB5D20124EC9001CC2C5 /* AlbumHomeViewController.swift in Sources */,
+				1E404C5A209CCC230021C9B8 /* AlbumHomeEntity.swift in Sources */,
 				1E404C34208F7D610021C9B8 /* GridViewCell.swift in Sources */,
 				1E404C56209CB74A0021C9B8 /* ApiRequest.swift in Sources */,
 				1E3E5727208E36FD00BEBCF7 /* MakeAlbumViewController.swift in Sources */,
@@ -934,6 +957,7 @@
 				1E40AB5720124C1F001CC2C5 /* SplashViewContrlller.swift in Sources */,
 				1E3E56F22088F22B00BEBCF7 /* SettingAccountViewController.swift in Sources */,
 				1E40AB7020138BFB001CC2C5 /* AlbumDiaryViewController.swift in Sources */,
+				1E404C5C209CCDE60021C9B8 /* AlbumHomeDataStore.swift in Sources */,
 				1EE6580820838EDB00D7ADD7 /* GlobalMenuViewController.swift in Sources */,
 				1E404C51209CA37A0021C9B8 /* AlbumHomeUseCase.swift in Sources */,
 				1E290C85202B468300B6FCC4 /* DetailPhotosViewController.swift in Sources */,
