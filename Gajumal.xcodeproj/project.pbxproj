@@ -18,7 +18,7 @@
 		1E3E56EA2086442900BEBCF7 /* sbw_parts_tab_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E72086442800BEBCF7 /* sbw_parts_tab_selected@3x.png */; };
 		1E3E56EB2086442900BEBCF7 /* sbw_parts_tab_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E82086442900BEBCF7 /* sbw_parts_tab_selected@2x.png */; };
 		1E3E56EC2086442900BEBCF7 /* sbw_parts_tab_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56E92086442900BEBCF7 /* sbw_parts_tab_selected.png */; };
-		1E3E56ED2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; };
+		1E3E56ED2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1E3E56EE2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33491B031C081D8A98A36070 /* Pods_Gajumal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E3E56F22088F22B00BEBCF7 /* SettingAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E56F12088F22B00BEBCF7 /* SettingAccountViewController.swift */; };
 		1E3E56F42088F37F00BEBCF7 /* SettingAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E56F32088F37F00BEBCF7 /* SettingAccount.storyboard */; };
@@ -42,6 +42,10 @@
 		1E404C56209CB74A0021C9B8 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C55209CB74A0021C9B8 /* ApiRequest.swift */; };
 		1E404C5A209CCC230021C9B8 /* AlbumHomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C59209CCC230021C9B8 /* AlbumHomeEntity.swift */; };
 		1E404C5C209CCDE60021C9B8 /* AlbumHomeDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E404C5B209CCDE60021C9B8 /* AlbumHomeDataStore.swift */; };
+		1E404C61209D40550021C9B8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E404C5E209D40430021C9B8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1E404C62209D40550021C9B8 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E404C5E209D40430021C9B8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E404C63209D40550021C9B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E404C5D209D40430021C9B8 /* RxSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1E404C64209D40550021C9B8 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E404C5D209D40430021C9B8 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E40AB2720124ACF001CC2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */; };
 		1E40AB2E20124ACF001CC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */; };
 		1E40AB3120124ACF001CC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E40AB2F20124ACF001CC2C5 /* LaunchScreen.storyboard */; };
@@ -104,7 +108,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1E404C62209D40550021C9B8 /* RxCocoa.framework in Embed Frameworks */,
 				1E3E56EE2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Embed Frameworks */,
+				1E404C64209D40550021C9B8 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +151,8 @@
 		1E404C55209CB74A0021C9B8 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		1E404C59209CCC230021C9B8 /* AlbumHomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeEntity.swift; sourceTree = "<group>"; };
 		1E404C5B209CCDE60021C9B8 /* AlbumHomeDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHomeDataStore.swift; sourceTree = "<group>"; };
+		1E404C5D209D40430021C9B8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		1E404C5E209D40430021C9B8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1E40AB2320124ACE001CC2C5 /* Gajumal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gajumal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E40AB2620124ACF001CC2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E40AB2D20124ACF001CC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E404C63209D40550021C9B8 /* RxSwift.framework in Frameworks */,
+				1E404C61209D40550021C9B8 /* RxCocoa.framework in Frameworks */,
 				1E3E56ED2088E2BF00BEBCF7 /* Pods_Gajumal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +606,8 @@
 		A570D52CE034DF78DF4AF1BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E404C5E209D40430021C9B8 /* RxCocoa.framework */,
+				1E404C5D209D40430021C9B8 /* RxSwift.framework */,
 				33491B031C081D8A98A36070 /* Pods_Gajumal.framework */,
 				5CE50DEED1F88E5D89F90914 /* Pods_GajumalTests.framework */,
 				A9ED6255D196ADB56E50DFFB /* Pods_GajumalUITests.framework */,
@@ -617,6 +629,7 @@
 				8B894556775378AA2D0152A1 /* [CP] Embed Pods Frameworks */,
 				D43375D09070FE34B349B356 /* [CP] Copy Pods Resources */,
 				1E3E56EF2088E2C000BEBCF7 /* Embed Frameworks */,
+				1E404C65209D40F70021C9B8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -789,6 +802,21 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		1E404C65209D40F70021C9B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		3459DE071FD85BAFADA8378A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1131,6 +1159,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X276R3Z6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Gajumal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.Gajumal;
@@ -1148,6 +1180,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X276R3Z6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Gajumal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.Gajumal;

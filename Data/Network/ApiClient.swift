@@ -7,23 +7,30 @@
 //
 
 import Foundation
-import Pods_Gajumal
+import RxSwift
+import RxCocoa
 
-struct ApiClient {
-    //ログイン用API
-    func getAccount() {
-        //let url: String = ""
-        //let request:
-    }
+class ApiClient:Codable {
     
-    //アルバム取得用API
-    func getAlbumPhoto(param:[String:Any], onSuccess:(ApiRequest?) -> Void, _ onError: (ApiRequest?) -> Void) {
-        let url: String = ""
-        let request = ApiRequest("POST",url,param)
-        if request.sendRequest() {
-            onSuccess(request)
-        } else {
-            onError(request)
+    private let baseUrl = URL(string: "http://192.168.1.12:8080/")!
+    
+    func send<T: Codable>(apiRequest: ApiRequest) -> Observable<T> {
+        return Observable<T>.create { observer in
+            let request = apiRequest.request(with: self.baseUrl)
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                do {
+                    let model: T = try JSONDecoder().decode(T.self, from: data!)
+                    observer.onNext(model)
+                } catch let error {
+                    observer.onError(error)
+                }
+                observer.onCompleted()
+            }
+            task.resume()
+            
+            return Disposables.create {
+                task.cancel()
+            }
         }
     }
 }

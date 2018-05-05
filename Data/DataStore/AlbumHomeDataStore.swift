@@ -7,13 +7,25 @@
 //
 
 import Foundation
-import Pods_Gajumal
+import RxSwift
+import RxCocoa
 
 public protocol AlbumHomeDataStore {
-    
+    func getAlbumPhotos() -> Observable<[AlbumHomeEntity]>
 }
 
-struct AlbumHomeDataStoreImpl {
-    let request: ApiClient = ApiClient()
+struct AlbumHomeDataStoreImpl : ApiRequest, AlbumHomeDataStore {
+    var method = RequestType.GET
+    var path = "photo"
+    var param = [String: String]()
     
+    init(name: String) {
+        param["name"] = name
+    }
+    
+    let apiClient = ApiClient()
+    
+    func getAlbumPhotos() -> Observable<[AlbumHomeEntity]> {
+        return apiClient.send(apiRequest: self)
+    }
 }

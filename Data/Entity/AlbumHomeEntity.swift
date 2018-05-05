@@ -8,6 +8,7 @@
 
 import Foundation
 
-public struct AlbumHomeEntity {
-    
+public struct AlbumHomeEntity: Codable {
+    var title = ""
+    var date = ""
 }
