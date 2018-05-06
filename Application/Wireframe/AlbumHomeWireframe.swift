@@ -11,9 +11,7 @@ import Foundation
 // 画面外のイベントの橋渡し
 protocol AlbumHomeWireframe : class {
     var viewController: AlbumHomeViewController? { get set }
-    
     func showYear()
-    
 }
 
 class AlbumHomeWireframeImpl: AlbumHomeWireframe {

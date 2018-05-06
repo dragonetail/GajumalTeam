@@ -16,7 +16,7 @@ public protocol AlbumHomeDataStore {
 
 struct AlbumHomeDataStoreImpl : ApiRequest, AlbumHomeDataStore {
     var method = RequestType.GET
-    var path = "photo"
+    var path = "albumTitle"
     var param = [String: String]()
     
     init(name: String) {
@@ -25,6 +25,7 @@ struct AlbumHomeDataStoreImpl : ApiRequest, AlbumHomeDataStore {
     
     let apiClient = ApiClient()
     
+    // datastoreから呼ばれる
     func getAlbumPhotos() -> Observable<[AlbumHomeEntity]> {
         return apiClient.send(apiRequest: self)
     }

@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+protocol AlbumHomeUseCase {
+    
+}
+
+struct AlbumHomeUseCaseImpl: AlbumHomeUseCase {
+    private let albumHomeRepository : AlbumHomeRepository
+    
+    public init(albumHomeRepository : AlbumHomeRepository) {
+        self.albumHomeRepository = albumHomeRepository
+    }
+}

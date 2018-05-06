@@ -10,9 +10,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class ApiClient:Codable {
+class ApiClient {
     
-    private let baseUrl = URL(string: "http://192.168.1.12:8080/")!
+    private let baseUrl = URL(string: "http://192.168.1.12:8080/gajumal/")!
     
     func send<T: Codable>(apiRequest: ApiRequest) -> Observable<T> {
         return Observable<T>.create { observer in

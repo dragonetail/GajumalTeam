@@ -10,5 +10,5 @@ import Foundation
 
 protocol AlbumHomeViewModel {
     var title: String { get }
-    var date: String { get }
+    //var date: String { get }
 }

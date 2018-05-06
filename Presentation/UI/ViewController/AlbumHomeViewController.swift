@@ -18,7 +18,11 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBOutlet weak var basicHeader: BasicHeader!
     @IBOutlet weak var plusButton: UIButton!
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var presenter: AlbumHomePresenter?
+    
+    public func inject(presenter: AlbumHomePresenter) {
+        self.presenter = presenter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +69,6 @@ extension AlbumHomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 || indexPath.row % 2 == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "leftCell") as! LeftNodeViewCell
-            //cell.updateCell(<#T##albumHomeModel: AlbumHomeViewModel##AlbumHomeViewModel#>)
             return cell
         }
         else {

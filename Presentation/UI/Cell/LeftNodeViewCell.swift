@@ -27,7 +27,7 @@ class LeftNodeViewCell: UITableViewCell {
     
     func updateCell(_ albumHomeModel: AlbumHomeViewModel) {
         self.albumTitle.text = albumHomeModel.title
-        self.albumDate.text = albumHomeModel.date
+        //self.albumDate.text = albumHomeModel.date
     }
     
     func customInit() {

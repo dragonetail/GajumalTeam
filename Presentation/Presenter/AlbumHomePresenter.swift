@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 enum AlbumHomeStatus {
     case none
@@ -19,5 +21,16 @@ protocol AlbumHomePresenter {
 }
 
 class AlbumHomePresenterImpl: AlbumHomePresenter {
+    weak var viewInput : AlbumHomeViewInput?
+    let wireframe: AlbumHomeWireframe
+    let useCase: AlbumHomeUseCase
     
+    
+    fileprivate let disposeBag = DisposeBag()
+    
+    public required init(viewInput : AlbumHomeViewInput, wireframe: AlbumHomeWireframe, useCase: AlbumHomeUseCase) {
+        self.viewInput = viewInput
+        self.wireframe = wireframe
+        self.useCase = useCase
+    }
 }
