@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class ApiClient {
-    
     private let baseUrl = URL(string: "http://192.168.1.12:8080/gajumal/")!
     
     func send<T: Codable>(apiRequest: ApiRequest) -> Observable<T> {

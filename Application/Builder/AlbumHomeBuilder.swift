@@ -11,10 +11,9 @@ import UIKit
 // return viewcontroller
 struct AlbumHomeBuilder {
     func build() -> UIViewController {
-        let name = ""
         let wireframe = AlbumHomeWireframeImpl()
         let viewController = UIStoryboard(name: "AlbumHome", bundle: nil).instantiateViewController(withIdentifier: "AlbumHome") as! AlbumHomeViewController
-        let useCase = AlbumHomeUseCaseImpl(albumHomeRepository: AlbumHomeRepositoryImpl(datastore: AlbumHomeDataStoreImpl(name: name)))
+        let useCase = AlbumHomeUseCaseImpl(albumHomeRepository: AlbumHomeRepository(num: "1"))
         let presenter = AlbumHomePresenterImpl(viewInput: viewController, wireframe: wireframe, useCase: useCase)
         viewController.inject(presenter: presenter)
         wireframe.viewController = viewController

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct AlbumHomeEntity: Codable, ApiRequest {
+public struct AlbumHomeEntity: Codable {
     var title : String
-    //var date : Date
+    var date : Date
 }

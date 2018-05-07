@@ -8,16 +8,12 @@
 
 import Foundation
 
-struct AlbumHomeModels {
-    var albumHomeModels: [AlbumHomeModel] = []
-}
-
-struct AlbumHomeModel: AlbumHomeViewModel {
+struct AlbumHomeModel {
     var title: String
-    //var date: String
+    var date: Date
     
     init(rowAlbumHomeModel: AlbumHomeEntity) {
         title = rowAlbumHomeModel.title
-        //date = rowAlbumHomeModel.date
+        date = rowAlbumHomeModel.date
     }
 }

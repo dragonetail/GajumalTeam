@@ -25,11 +25,6 @@ class LeftNodeViewCell: UITableViewCell {
         makeTriangle()
     }
     
-    func updateCell(_ albumHomeModel: AlbumHomeViewModel) {
-        self.albumTitle.text = albumHomeModel.title
-        //self.albumDate.text = albumHomeModel.date
-    }
-    
     func customInit() {
         //let rgb = UIColor(red: 22/255, green: 160/255, blue: 133/255, alpha: 1.0)
         topView.layer.borderColor = UIColor.lightGray.cgColor

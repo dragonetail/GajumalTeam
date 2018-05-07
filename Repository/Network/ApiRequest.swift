@@ -31,7 +31,7 @@ extension ApiRequest {
         components.queryItems = param.map {
             URLQueryItem(name: String($0), value: String($1))
         }
-        
+
         guard let url = components.url else {
             fatalError("")
         }
