@@ -21,15 +21,13 @@ protocol AlbumHomePresenter {
 }
 
 class AlbumHomePresenterImpl: AlbumHomePresenter {
-    weak var viewInput : AlbumHomeViewInput?
     let wireframe: AlbumHomeWireframe
     let useCase: AlbumHomeUseCase
     
     
     fileprivate let disposeBag = DisposeBag()
     
-    public required init(viewInput : AlbumHomeViewInput, wireframe: AlbumHomeWireframe, useCase: AlbumHomeUseCase) {
-        self.viewInput = viewInput
+    public required init(wireframe: AlbumHomeWireframe, useCase: AlbumHomeUseCase) {
         self.wireframe = wireframe
         self.useCase = useCase
     }

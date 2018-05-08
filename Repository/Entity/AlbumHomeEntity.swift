@@ -6,9 +6,15 @@
 //  Copyright © 2018年 井草俊輔. All rights reserved.
 //
 
-import Foundation
 
-public struct AlbumHomeEntity: Codable {
+import RxSwift
+
+struct AlbumHomeEntity : Codable {
     var title : String
     var date : Date
+    
+    init(title: String, date: Date) {
+        self.title = title
+        self.date = date
+    }
 }

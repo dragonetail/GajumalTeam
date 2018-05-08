@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-protocol AlbumHomeViewInput: class {
-    func changedStatus(_:AlbumHomeStatus)
-}
 
 class AlbumHomeViewController: UIViewController, OnClickDelegate {
     
@@ -20,6 +19,8 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     
     var presenter: AlbumHomePresenter?
     
+    private let apiClient = ApiClient()
+    
     public func inject(presenter: AlbumHomePresenter) {
         self.presenter = presenter
     }
@@ -27,8 +28,6 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         basicHeader.delegate = self
-        tableView.delegate = self
-        tableView.dataSource = self
         tableView.register(UINib(nibName: "LeftNodeViewCell", bundle: nil), forCellReuseIdentifier: "leftCell")
         tableView.register(UINib(nibName: "RightNodeViewCell", bundle: nil), forCellReuseIdentifier: "rightCell")
         tableView.separatorInset = UIEdgeInsets.zero
@@ -53,15 +52,11 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
         let detailVC = storyboard.instantiateViewController(withIdentifier: "MakeAlbumViewController") as! MakeAlbumViewController
         present(detailVC, animated: true, completion: nil)
     }
-}
+    
+    private func configureReactiveBinding() {
 
-extension AlbumHomeViewController : AlbumHomeViewInput{
-    func changedStatus(_ status: AlbumHomeStatus) {
-        
     }
-}
-
-extension AlbumHomeViewController : UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

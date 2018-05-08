@@ -7,8 +7,23 @@
 //
 
 import UIKit
+import RxSwift
 
 class LeftNodeViewCell: UITableViewCell {
+    
+    let disposeBag = DisposeBag()
+    
+    var viewModel: AlbumHomeModel? {
+        didSet {
+            guard let vModel = self.viewModel else { return }
+            [
+                vModel.title.bind(to: self.albumTitle.rx.text),
+                
+                vModel.date.bind(to: self.albumDate.rx.text),
+                
+                ].forEach { $0.addDisposableTo(self.disposeBag) }
+        }
+    }
 
     
     @IBOutlet weak var mainView: UIView!

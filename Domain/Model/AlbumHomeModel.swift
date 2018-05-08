@@ -6,14 +6,20 @@
 //  Copyright © 2018年 井草俊輔. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import RxCocoa
 
 struct AlbumHomeModel {
-    var title: String
-    var date: Date
+    let model : Variable<AlbumHomeEntity>
+    let title: Observable<String>
+    let date: Observable<String>
     
-    init(rowAlbumHomeModel: AlbumHomeEntity) {
-        title = rowAlbumHomeModel.title
-        date = rowAlbumHomeModel.date
+    let disposeBag = DisposeBag()
+    
+    init(model: AlbumHomeEntity) {
+        self.model = Variable(model)
+        self.title = self.model.asObservable().map { $0.title }
+        self.date = self.model.asObservable().map { $0.date }
     }
+
 }
