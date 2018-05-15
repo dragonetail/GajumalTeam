@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
 
 class AlbumHomeViewController: UIViewController, OnClickDelegate {
@@ -17,19 +15,16 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBOutlet weak var basicHeader: BasicHeader!
     @IBOutlet weak var plusButton: UIButton!
     
-    var presenter: AlbumHomePresenter?
-    
-    private let apiClient = ApiClient()
-    
-    public func inject(presenter: AlbumHomePresenter) {
-        self.presenter = presenter
-    }
+    var albumHomeViewModel : AlbumHomeViewModel?
+    var useCase : AlbumHomeUseCase? = AlbumHomeUseCase()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        useCase?.makeQueue("1", CommunicationType.getAlbumHome)
         basicHeader.delegate = self
-        tableView.register(UINib(nibName: "LeftNodeViewCell", bundle: nil), forCellReuseIdentifier: "leftCell")
-        tableView.register(UINib(nibName: "RightNodeViewCell", bundle: nil), forCellReuseIdentifier: "rightCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "AlbumViewCell", bundle: nil), forCellReuseIdentifier: "albumViewCell")
         tableView.separatorInset = UIEdgeInsets.zero
         tableView.separatorStyle = .none
         self.view.bringSubview(toFront: plusButton)
@@ -52,30 +47,24 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
         let detailVC = storyboard.instantiateViewController(withIdentifier: "MakeAlbumViewController") as! MakeAlbumViewController
         present(detailVC, animated: true, completion: nil)
     }
-    
-    private func configureReactiveBinding() {
-
-    }
+}
+extension AlbumHomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 || indexPath.row % 2 == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "leftCell") as! LeftNodeViewCell
-            return cell
-        }
-        else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "rightCell") as! RightNodeViewCell
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "albumViewCell") as! AlbumViewCell
+        return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // nothing to do
     }
+    
 }
