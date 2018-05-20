@@ -11,6 +11,11 @@
 import Foundation
 
 struct AlbumHomeEntity : Codable {
-    var date : String
-    var title : String
+    let models : [AlbumHomeEntities]?
+    let count : Int64?
+    struct AlbumHomeEntities : Codable {
+        let albumId : Int64?
+        let date : String
+        let title : String
+    }
 }

@@ -15,12 +15,10 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
     @IBOutlet weak var basicHeader: BasicHeader!
     @IBOutlet weak var plusButton: UIButton!
     
-    var albumHomeViewModel : AlbumHomeViewModel?
-    var useCase : AlbumHomeUseCase? = AlbumHomeUseCase()
+    var albumInfos : AlbumHomeViewModels?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        useCase?.makeQueue("1", CommunicationType.getAlbumHome)
         basicHeader.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,11 +49,13 @@ class AlbumHomeViewController: UIViewController, OnClickDelegate {
 extension AlbumHomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return albumInfos!.albumInfos.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "albumViewCell") as! AlbumViewCell
+        cell.albumDate.text = albumInfos?.albumInfos[indexPath.row].date
+        cell.albumTitle.text = albumInfos?.albumInfos[indexPath.row].title
         return cell
     }
 

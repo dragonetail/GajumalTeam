@@ -14,9 +14,9 @@ class AlbumViewCell: UITableViewCell {
     @IBOutlet weak var albumDate: UILabel!
     @IBOutlet weak var albumTitle: UILabel!
     
-    func updateCell(_ albumHomeViewModel: AlbumHomeViewModel) {
-        self.albumDate.text = albumHomeViewModel.albumDate
-        self.albumTitle.text = albumHomeViewModel.albumTitle
-    }
+//    func updateCell(_ albumHomeViewModel: AlbumHomeViewModel) {
+//        self.albumDate.text = albumHomeViewModel.albumDate
+//        self.albumTitle.text = albumHomeViewModel.albumTitle
+//    }
     
 }

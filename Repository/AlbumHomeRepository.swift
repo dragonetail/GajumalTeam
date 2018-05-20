@@ -13,7 +13,7 @@ enum CommunicationType: Int {
 
 class AlbumHomeRepository {
     
-    let baseURL = "http://192.168.1.12:8080/gajumal"
+    let baseURL = "http://192.168.1.9:8080/gajumal"
     var path : String?
     var method : String?
     var param : [String:Any]?
@@ -23,7 +23,7 @@ class AlbumHomeRepository {
         self.method = method
     }
     
-    func call(_ type:CommunicationType, _ param:[String:Any]?,
+    func call(_ type:CommunicationType, _ param:[String:Any],
                          _ onSuccess:@escaping (GajumalRequest?) -> Void,
                          _ onError:@escaping (GajumalRequest?) -> Void) {
             self.param = param

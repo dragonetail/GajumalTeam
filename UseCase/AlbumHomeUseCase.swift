@@ -11,7 +11,12 @@ import RxSwift
 
 class AlbumHomeUseCase {
     
-    func makeQueue(_ param: String , _ type: CommunicationType) {
+    var albumHomeVM : AlbumHomeViewModels?
+    var vc : AlbumHomeViewController?
+    
+    func makeQueue(_ param: String , _ type: CommunicationType, _ vm: AlbumHomeViewModels){
+        self.albumHomeVM = vm
+        // スレッド生成
         let queue = DispatchQueue(label: "communication", attributes: [])
         queue.async(execute: {
             switch type {
@@ -26,13 +31,23 @@ class AlbumHomeUseCase {
         param = [String:Any]()
         let albumHomeRepo = AlbumHomeRepository("/albumTitle", "GET")
         param!["num"] = param
-        albumHomeRepo.call(CommunicationType.getAlbumHome, param, {(request:GajumalRequest?) -> Void in
+        albumHomeRepo.call(CommunicationType.getAlbumHome, param!, {(request:GajumalRequest?) -> Void in
             let json = request?.accessresponseData!.data(using:String.Encoding.utf8)
-            let result = try! JSONDecoder().decode(AlbumHomeEntity.self, from: json as! Data)
-            let d = result.date
-            let t = result.title
+            self.parseJson(json: json!)
         }, {(request:GajumalRequest?) -> Void in
             print("error")
         })
+    }
+    
+    func parseJson(json : Data) {
+        let result = try! JSONDecoder().decode(AlbumHomeEntity.self, from: json as! Data)
+        if result != nil {
+            let albumInfos = result.models
+            let count = result.count
+            for ai in albumInfos! {
+                print(ai)
+                self.albumHomeVM?.albumInfos.append(ai)
+            }
+        }
     }
 }

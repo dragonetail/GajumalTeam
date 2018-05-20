@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-v7-tPN">
                         <rect key="frame" x="20" y="20.000000000000007" width="280" height="109.66666666666669"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Malaysia_Skyscrapers_447585.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uwT-CB-Mdd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uwT-CB-Mdd">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="109.66666666666667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtW-KQ-q6f">
@@ -64,7 +64,4 @@
             <point key="canvasLocation" x="8" y="30"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Malaysia_Skyscrapers_447585.jpg" width="1280" height="800"/>
-    </resources>
 </document>
